@@ -7,8 +7,25 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Hitta rätt a-kassa för ditt yrke",
-    description: "Jämför a-kassor och hitta den som passar ditt yrke bäst.",
+    title: {
+        default: "Hitta rätt a-kassa för ditt yrke | A-kassa Portal",
+        template: "%s | A-kassa Portal",
+    },
+    description: "Jämför Sveriges alla a-kassor och hitta rätt kassa för ditt yrke. Snabb jämförelse, tydliga rekommendationer och uppdaterad information.",
+    openGraph: {
+        type: "website",
+        locale: "sv_SE",
+        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app",
+        siteName: "A-kassa Portal",
+        images: [
+            {
+                url: "/hero-poster.jpg",
+                width: 1200,
+                height: 630,
+                alt: "A-kassa Portal - Hitta rätt a-kassa",
+            },
+        ],
+    },
 };
 
 export default function RootLayout({

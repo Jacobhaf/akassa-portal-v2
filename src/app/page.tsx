@@ -4,6 +4,25 @@ import AkassaCard from "@/components/AkassaCard";
 import YrkeCard from "@/components/YrkeCard";
 import AkassorGrid from "@/components/AkassorGrid";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Jämför alla Sveriges A-kassor | A-kassa Portal",
+    description: "Jämför Sveriges alla a-kassor och hitta rätt kassa för ditt yrke. Snabb jämförelse, tydliga rekommendationer och uppdaterad information.",
+    openGraph: {
+        title: "Jämför alla Sveriges A-kassor | A-kassa Portal",
+        description: "Jämför Sveriges alla a-kassor och hitta rätt kassa för ditt yrke. Snabb jämförelse, tydliga rekommendationer och uppdaterad information.",
+        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app",
+        images: [
+            {
+                url: "/hero-poster.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Jämför a-kassor",
+            },
+        ],
+    },
+};
 
 export default function Home() {
     // Select a few popular professions to display

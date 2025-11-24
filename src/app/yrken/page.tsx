@@ -1,9 +1,23 @@
+
 import Link from "next/link";
 import { yrken } from "@/data/database";
 
 export const metadata = {
-    title: "Alla yrken | Välj a-kassa",
-    description: "Här hittar du alla yrken vi matchar mot a-kassa. Klicka på ditt yrke för att se vilken a-kassa som rekommenderas.",
+    title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | A-kassa Portal",
+    description: "Lista över alla yrken vi matchar mot a-kassa. Hitta ditt yrke och se vilken a-kassa som rekommenderas för just din bransch.",
+    openGraph: {
+        title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | A-kassa Portal",
+        description: "Lista över alla yrken vi matchar mot a-kassa. Hitta ditt yrke och se vilken a-kassa som rekommenderas för just din bransch.",
+        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/yrken",
+        images: [
+            {
+                url: "/hero-poster.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Alla yrken - A-kassa Portal",
+            },
+        ],
+    },
 };
 
 export default function YrkenPage() {
@@ -25,13 +39,13 @@ export default function YrkenPage() {
                 {sortedYrken.map((yrke) => (
                     <Link
                         key={yrke.slug}
-                        href={`/yrken/${yrke.slug}`} // Note: User mentioned /yrken/[slug] but current structure might be different. 
+                        href={`/ yrken / ${yrke.slug} `} // Note: User mentioned /yrken/[slug] but current structure might be different. 
                         // The prompt said: "Varje yrke ska länka vidare till en yrkessida, t.ex. /yrken/larare"
                         // But existing code in Header had /yrke. I changed Header to /yrken.
                         // I should check if /yrken/[slug] exists or if I need to create it.
-                        // Existing structure has `src/app/yrke` folder.
-                        // I should probably rename `src/app/yrke` to `src/app/yrken` or create `src/app/yrken/[slug]`.
-                        // For now I will link to `/yrken/${yrke.slug}` as requested.
+                        // Existing structure has `src / app / yrke` folder.
+                        // I should probably rename `src / app / yrke` to `src / app / yrken` or create `src / app / yrken / [slug]`.
+                        // For now I will link to `/ yrken / ${ yrke.slug } ` as requested.
                         className="group flex items-center justify-between rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:border-blue-200 hover:shadow-md"
                     >
                         <span className="font-medium text-gray-900 group-hover:text-blue-600">

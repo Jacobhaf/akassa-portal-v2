@@ -19,8 +19,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${yrke.name} a-kassa – vilken a-kassa ska jag välja 2025?`,
+        title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
         description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
+        openGraph: {
+            title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
+            description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
+            url: `https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/yrken/${yrke.slug}`,
+            images: [
+                {
+                    url: "/hero-poster.jpg",
+                    width: 1200,
+                    height: 630,
+                    alt: `${yrke.name} a-kassa`,
+                },
+            ],
+        },
     };
 }
 

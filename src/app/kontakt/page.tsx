@@ -1,6 +1,19 @@
 export const metadata = {
-    title: "Kontakt | Välj a-kassa",
-    description: "Kontakta oss om du har frågor om a-kassor eller vår tjänst.",
+    title: "Kontakta oss | A-kassa Portal",
+    description: "Har du frågor eller funderingar? Kontakta oss på A-kassa Portal så hjälper vi dig att hitta rätt information.",
+    openGraph: {
+        title: "Kontakta oss | A-kassa Portal",
+        description: "Har du frågor eller funderingar? Kontakta oss på A-kassa Portal så hjälper vi dig att hitta rätt information.",
+        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/kontakt",
+        images: [
+            {
+                url: "/hero-poster.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Kontakta oss - A-kassa Portal",
+            },
+        ],
+    },
 };
 
 export default function KontaktPage() {

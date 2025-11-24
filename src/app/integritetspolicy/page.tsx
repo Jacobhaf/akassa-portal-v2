@@ -1,6 +1,19 @@
 export const metadata = {
-    title: "Integritetspolicy | Välj a-kassa",
-    description: "Läs om hur vi hanterar dina personuppgifter och cookies.",
+    title: "Integritetspolicy och Cookies | A-kassa Portal",
+    description: "Läs om hur vi hanterar dina personuppgifter och cookies på A-kassa Portal. Din integritet är viktig för oss.",
+    openGraph: {
+        title: "Integritetspolicy och Cookies | A-kassa Portal",
+        description: "Läs om hur vi hanterar dina personuppgifter och cookies på A-kassa Portal. Din integritet är viktig för oss.",
+        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/integritetspolicy",
+        images: [
+            {
+                url: "/hero-poster.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Integritetspolicy - A-kassa Portal",
+            },
+        ],
+    },
 };
 
 export default function IntegritetspolicyPage() {

@@ -13,8 +13,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const article = articles.find((a) => a.slug === params.slug);
     if (!article) return { title: "Artikel hittades inte" };
     return {
-        title: `${article.title} | Välj a-kassa`,
+        title: `${article.title} | A-kassa Portal`,
         description: article.summary,
+        openGraph: {
+            title: `${article.title} | A-kassa Portal`,
+            description: article.summary,
+            type: "article",
+            publishedTime: article.publishedAt,
+            url: `https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/artiklar/${article.slug}`,
+            images: [
+                {
+                    url: article.image,
+                    width: 1200,
+                    height: 630,
+                    alt: article.title,
+                },
+            ],
+        },
     };
 }
 

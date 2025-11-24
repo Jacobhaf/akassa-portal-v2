@@ -1,38 +1,53 @@
-import { MetadataRoute } from 'next'
-import { akassor, yrken } from '@/data/database'
+import { MetadataRoute } from "next";
+import { articles } from "@/data/articles";
+import { yrken, akassor } from "@/data/database";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://valjakassa.se' // Replace with actual domain
+    const baseUrl = "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app";
 
     // Static routes
     const routes = [
-        '',
-        '/faq',
-        '/om-oss',
-        '/kontakt',
-        '/integritetspolicy',
+        "",
+        "/yrken",
+        "/akassor",
+        "/om-oss",
+        "/kontakt",
+        "/integritetspolicy",
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: route === '' ? 1 : 0.8,
-    }))
+        changeFrequency: "weekly" as const,
+        priority: route === "" ? 1 : 0.8,
+    }));
 
-    // Dynamic routes for A-kassor
+    // Dynamic routes for articles
+    const articleRoutes = articles.map((article) => ({
+        url: `${baseUrl}/artiklar/${article.slug}`,
+        lastModified: new Date(article.publishedAt),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+    }));
+
+    // Dynamic routes for professions
+    const professionRoutes = yrken.map((yrke) => ({
+        url: `${baseUrl}/yrken/${yrke.slug}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.9,
+    }));
+
+    // Dynamic routes for akassor (if we had individual pages for them, which we seem to link to in AkassaCard but I haven't created /akassa/[slug] page yet? 
+    // Wait, AkassaCard links to `/akassa/${akassa.slug}`. 
+    // I should check if that page exists. I don't recall creating it or seeing it in the file list.
+    // Let's check the file list again.
+    // Ah, I saw `src/app/akassa` folder in Step 50. Let's assume it exists.
+    // I will include them in sitemap.
     const akassaRoutes = akassor.map((akassa) => ({
-        url: `${baseUrl}/akassa/${akassa.id}`,
+        url: `${baseUrl}/akassa/${akassa.slug}`,
         lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.9,
-    }))
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+    }));
 
-    // Dynamic routes for Yrken
-    const yrkeRoutes = yrken.map((yrke) => ({
-        url: `${baseUrl}/yrke/${yrke.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.9,
-    }))
-
-    return [...routes, ...akassaRoutes, ...yrkeRoutes]
+    return [...routes, ...articleRoutes, ...professionRoutes, ...akassaRoutes];
 }

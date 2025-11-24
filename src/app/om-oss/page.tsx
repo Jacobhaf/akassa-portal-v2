@@ -1,6 +1,19 @@
 export const metadata = {
-    title: "Om oss | Välj a-kassa",
-    description: "Vi hjälper dig att hitta rätt a-kassa baserat på ditt yrke.",
+    title: "Om oss – Oberoende guide till a-kassor | A-kassa Portal",
+    description: "Läs mer om A-kassa Portal. Vi är en oberoende tjänst som hjälper dig att hitta rätt a-kassa baserat på ditt yrke och din bransch.",
+    openGraph: {
+        title: "Om oss – Oberoende guide till a-kassor | A-kassa Portal",
+        description: "Läs mer om A-kassa Portal. Vi är en oberoende tjänst som hjälper dig att hitta rätt a-kassa baserat på ditt yrke och din bransch.",
+        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/om-oss",
+        images: [
+            {
+                url: "/hero-poster.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Om oss - A-kassa Portal",
+            },
+        ],
+    },
 };
 
 export default function OmOssPage() {
