@@ -35,12 +35,12 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/akassa" className="text-base text-gray-300 hover:text-white transition-colors">
+                                <Link href="/akassor" className="text-base text-gray-300 hover:text-white transition-colors">
                                     A-kassor
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/yrke" className="text-base text-gray-300 hover:text-white transition-colors">
+                                <Link href="/yrken" className="text-base text-gray-300 hover:text-white transition-colors">
                                     Yrken
                                 </Link>
                             </li>
@@ -79,6 +79,23 @@ export default function Footer() {
                                 </Link>
                             </li>
                         </ul>
+                    </div>
+
+                    {/* Contact Info */}
+                    <div>
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
+                            Kontakt
+                        </h3>
+                        <address className="not-italic text-gray-300 text-sm space-y-2">
+                            <p>Välj a-kassa</p>
+                            <p>Vallgatan 25</p>
+                            <p>411 16 Göteborg</p>
+                            <p className="pt-2">
+                                <a href="mailto:info@valjakassa.se" className="hover:text-white transition-colors">
+                                    info@valjakassa.se
+                                </a>
+                            </p>
+                        </address>
                     </div>
                 </div>
 

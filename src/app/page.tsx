@@ -2,6 +2,7 @@ import { akassor, yrken } from "@/data/database";
 import Search from "@/components/Search";
 import AkassaCard from "@/components/AkassaCard";
 import YrkeCard from "@/components/YrkeCard";
+import AkassorGrid from "@/components/AkassorGrid";
 import Link from "next/link";
 
 export default function Home() {
@@ -57,8 +58,7 @@ export default function Home() {
                             Populära yrken
                         </h2>
                         <p className="text-lg text-gray-600">
-                            Vet du redan vad du jobbar som? Klicka på ditt yrke nedan och se
-                            vilken a-kassa som rekommenderas.
+                            Klicka på ditt yrke nedan och se vilken a-kassa som rekommenderas.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -94,11 +94,7 @@ export default function Home() {
                             medlem.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {akassor.map((akassa) => (
-                            <AkassaCard key={akassa.id} akassa={akassa} />
-                        ))}
-                    </div>
+                    <AkassorGrid />
                 </div>
             </section>
         </div>

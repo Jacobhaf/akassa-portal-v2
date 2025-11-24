@@ -29,13 +29,13 @@ export default function Header() {
                         Hem
                     </Link>
                     <Link
-                        href="/akassa"
+                        href="/#jamfor"
                         className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
                     >
                         A-kassor
                     </Link>
                     <Link
-                        href="/yrke"
+                        href="/yrken"
                         className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
                     >
                         Yrken
@@ -87,14 +87,14 @@ export default function Header() {
                             Hem
                         </Link>
                         <Link
-                            href="/akassa"
+                            href="/#jamfor"
                             className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             A-kassor
                         </Link>
                         <Link
-                            href="/yrke"
+                            href="/yrken"
                             className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
                             onClick={() => setIsMenuOpen(false)}
                         >
