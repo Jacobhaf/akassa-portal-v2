@@ -153,6 +153,26 @@ export default function YrkePage({ params }: Props) {
                         </p>
                     </section>
 
+                    {/* Related Resources */}
+                    <section className="bg-blue-50 rounded-xl p-6 border border-blue-100 my-8">
+                        <h2 className="text-xl font-bold text-gray-900 mb-4">Relaterade resurser</h2>
+                        <ul className="space-y-3">
+                            <li>
+                                <Link
+                                    href={`/yrken/${yrke.slug}/checklista`}
+                                    className="group flex items-center gap-3 text-blue-700 hover:text-blue-900 transition-colors"
+                                >
+                                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xl group-hover:bg-blue-200">
+                                        📋
+                                    </span>
+                                    <span className="font-medium underline decoration-blue-300 underline-offset-4 group-hover:decoration-blue-900">
+                                        Checklista: Så gör du om du blir arbetslös som {yrke.name}
+                                    </span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </section>
+
                     {/* FAQ */}
                     <section className="border-t border-gray-100 pt-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-8">
