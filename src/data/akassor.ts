@@ -62,7 +62,7 @@ export const akassor: Akassa[] = [
     },
     {
         name: "Hamnarbetarnas a-kassa",
-        slug: "hamnarbetarna",
+        slug: "hamn",
         logo: "https://hamnarbetarna.se/wp-content/uploads/2020/11/hamnarbetare-logo.svg",
         url: "https://hamnakassa.se"
     },
@@ -86,7 +86,7 @@ export const akassor: Akassa[] = [
     },
     {
         name: "Journalisternas a-kassa",
-        slug: "journalisterna",
+        slug: "journalist",
         logo: "https://www.sjf.se/themes/custom/sjf/logo.svg",
         url: "https://www.journalisternas-akassa.se"
     },
@@ -134,7 +134,7 @@ export const akassor: Akassa[] = [
     },
     {
         name: "STs a-kassa",
-        slug: "st",
+        slug: "sts",
         logo: "https://www.st.org/themes/custom/st/logo.svg",
         url: "https://www.stsakassa.se"
     },
