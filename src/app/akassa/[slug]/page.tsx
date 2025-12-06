@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { akassor, yrken } from "@/data/database";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const akassa = akassor.find((a) => a.slug === params.slug);
+    const akassa = akassor.find((a) => a.slug === params.slug) || akassor.find((a) => a.id === params.slug);
 
     if (!akassa) {
         return {
@@ -31,9 +31,14 @@ export function generateStaticParams() {
 }
 
 export default function AkassaPage({ params }: Props) {
-    const akassa = akassor.find((a) => a.slug === params.slug);
+    let akassa = akassor.find((a) => a.slug === params.slug);
 
     if (!akassa) {
+        // Try finding by ID (short slug) for backward compatibility
+        const byId = akassor.find((a) => a.id === params.slug);
+        if (byId) {
+            redirect(`/akassa/${byId.slug}`);
+        }
         notFound();
     }
 
@@ -131,7 +136,7 @@ export default function AkassaPage({ params }: Props) {
                                     {relatedYrken.map((yrke) => (
                                         <Link
                                             key={yrke.slug}
-                                            href={`/yrke/${yrke.slug}`}
+                                            href={`/yrken/${yrke.slug}`}
                                             className="inline-block px-3 py-1 bg-white text-blue-600 text-sm font-medium rounded-full border border-blue-200 hover:border-blue-400 transition-colors"
                                         >
                                             {yrke.name}

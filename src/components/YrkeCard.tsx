@@ -10,7 +10,7 @@ interface Props {
 export default function YrkeCard({ yrke, akassa }: Props) {
     return (
         <Link
-            href={`/yrke/${yrke.slug}`}
+            href={`/yrken/${yrke.slug}`}
             className="group relative flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-md hover:ring-blue-200"
         >
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600 group-hover:bg-blue-100 transition-colors">

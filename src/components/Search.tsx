@@ -38,7 +38,7 @@ export default function Search() {
     }, []);
 
     const handleSelect = (slug: string) => {
-        router.push(`/yrke/${slug}`);
+        router.push(`/yrken/${slug}`);
         setIsOpen(false);
         setQuery("");
     };

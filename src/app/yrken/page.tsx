@@ -39,7 +39,7 @@ export default function YrkenPage() {
                 {sortedYrken.map((yrke) => (
                     <Link
                         key={yrke.slug}
-                        href={`/ yrken / ${yrke.slug} `} // Note: User mentioned /yrken/[slug] but current structure might be different. 
+                        href={`/yrken/${yrke.slug}`}
                         // The prompt said: "Varje yrke ska länka vidare till en yrkessida, t.ex. /yrken/larare"
                         // But existing code in Header had /yrke. I changed Header to /yrken.
                         // I should check if /yrken/[slug] exists or if I need to create it.
