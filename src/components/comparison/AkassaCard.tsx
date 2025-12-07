@@ -20,15 +20,7 @@ export default function AkassaCard({ akassa }: Props) {
             <div className="flex items-center p-6 md:w-1/4 md:p-4">
                 <div className="relative h-12 w-full max-w-[140px]">
                     <Image
-                        src={`/logos/${akassa.slug}.png`} // Assuming logo format or using explicit logoUrl logic if exists?
-                        // Actually, 'logo' property wasn't added to Akassa interface in types... 
-                        // But I see `logo: "/logos/aea.png"` in akassor.ts but NOT in database.ts? 
-                        // Wait. database.ts was where I updated. Does database.ts HAS a logo field? 
-                        // Looking at Step 1290, database.ts does NOT have logo field!
-                        // The user said: "Use actual logo URLs already existing in the project."
-                        // akassor.ts has them. database.ts needs them or I derive them from slug?
-                        // Most logos are `/logos/[slug].png` (Step 1203 showed this).
-                        // I will rely on slug mapping for now.
+                        src={`/logos/${akassa.id}.png`}
                         alt={`${akassa.name} logotyp`}
                         fill
                         className="object-contain object-left md:object-center"

@@ -2,11 +2,14 @@
 import AkassaComparison from "@/components/comparison/AkassaComparison";
 
 export const metadata = {
-    title: "Jämför A-kassor – Hitta bästa pris och villkor | A-kassaportal",
+    title: "Jämför A-kassor 2024 – Hitta bästa pris och villkor | A-kassa Portal",
     description: "Jämför Sveriges alla a-kassor. Se pris, medlemsantal och hitta den kassa som passar ditt yrke bäst. Enkel och oberoende jämförelse.",
+    alternates: {
+        canonical: '/jamfor',
+    },
 };
 
-export default function DemoPage() {
+export default function ComparePage() {
     return (
         <main className="min-h-screen bg-gray-50 pb-20">
             {/* Hero Section */}

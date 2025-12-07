@@ -44,6 +44,12 @@ export default function Header() {
                         A-kassor
                     </Link>
                     <Link
+                        href="/jamfor"
+                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
+                    >
+                        Jämför a-kassor
+                    </Link>
+                    <Link
                         href="/yrken"
                         className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
                     >
@@ -66,7 +72,7 @@ export default function Header() {
                 {/* Desktop CTA */}
                 <div className="hidden md:flex items-center gap-4">
                     <Link
-                        href="/#jamfor"
+                        href="/jamfor"
                         className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
                     >
                         Jämför a-kassor
@@ -113,6 +119,13 @@ export default function Header() {
                             A-kassor
                         </Link>
                         <Link
+                            href="/jamfor"
+                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Jämför a-kassor
+                        </Link>
+                        <Link
                             href="/yrken"
                             className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
                             onClick={() => setIsMenuOpen(false)}
@@ -136,7 +149,7 @@ export default function Header() {
 
                         <div className="pt-8 w-full max-w-xs">
                             <Link
-                                href="/#jamfor"
+                                href="/jamfor"
                                 className="block w-full text-center rounded-full bg-blue-600 px-8 py-4 text-lg font-bold text-white shadow-xl hover:bg-blue-500 hover:shadow-2xl hover:-translate-y-1 transition-all"
                                 onClick={() => setIsMenuOpen(false)}
                             >
