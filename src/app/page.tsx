@@ -72,9 +72,7 @@ export default function Home() {
                             >
                                 Jämför nu
                             </Link>
-                            <Link href="/artiklar/vad-ar-akassa" className="text-sm font-semibold leading-6 text-white">
-                                Vad är a-kassa? <span aria-hidden="true">→</span>
-                            </Link>
+
                         </div>
                     </div>
                 </div>
