@@ -26,8 +26,20 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-    // Select a few popular professions to display
-    const popularYrken = yrken.slice(0, 12);
+    // Select specific popular professions to display
+    const targetYrkenNames = [
+        "Lärare",
+        "Sjuksköterska",
+        "Undersköterska",
+        "Elektriker",
+        "Snickare",
+        "Ekonom"
+    ];
+
+    // Filter and sort to match the order in targetYrkenNames
+    const popularYrken = targetYrkenNames
+        .map(name => yrken.find(y => y.name === name))
+        .filter((y): y is typeof yrken[0] => y !== undefined);
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -79,7 +91,7 @@ export default function Home() {
                             Klicka på ditt yrke nedan och se vilken a-kassa som rekommenderas.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
                         {popularYrken.map((yrke) => {
                             const recommendedAkassa = akassor.find(
                                 (a) => a.id === yrke.recommendedAkassaId
@@ -92,6 +104,14 @@ export default function Home() {
                                 />
                             );
                         })}
+                    </div>
+                    <div className="mt-12 text-center">
+                        <Link
+                            href="/yrken"
+                            className="inline-flex items-center justify-center rounded-full bg-blue-600 px-8 py-4 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all hover:scale-105"
+                        >
+                            Se alla yrken
+                        </Link>
                     </div>
                 </div>
             </section>
