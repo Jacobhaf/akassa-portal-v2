@@ -151,15 +151,7 @@ export default function ChecklistPage({ params }: Props) {
                     </Link>
                 </div>
 
-                <div className="mt-12 rounded-lg border border-dashed border-gray-300 bg-gray-50 p-4 text-sm text-gray-500">
-                    <p className="font-semibold uppercase tracking-wider text-xs">Redaktörsinstruktion:</p>
-                    <p>
-                        Denna checklistsida ska länkas från yrkessidan:<br />
-                        <code>https://akassa-portal-v2.vercel.app/yrken/{params.slug}</code><br />
-                        Placera länken under sektionen för relaterade resurser. Den ska leda till undersidan:<br />
-                        <code>/yrken/{params.slug}/checklista</code>
-                    </p>
-                </div>
+
             </div>
         </main>
     );

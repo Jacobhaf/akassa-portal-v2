@@ -71,6 +71,14 @@ export default function YrkePage({ params }: Props) {
                         och varför, hur ersättningen fungerar och ungefär vad en {yrke.name}{" "}
                         tjänar 2025.
                     </p>
+                    <div className="mt-8">
+                        <Link
+                            href={`/yrken/${yrke.slug}/checklista`}
+                            className="inline-flex items-center gap-2 text-white font-semibold underline decoration-green-300 underline-offset-4 hover:decoration-white hover:text-green-50 transition-colors"
+                        >
+                            <span className="text-xl">📋</span> Se checklista: Vad gör jag om jag blir arbetslös? →
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="p-8 sm:p-12 space-y-12">
