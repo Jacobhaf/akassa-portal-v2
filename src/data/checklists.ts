@@ -1370,5 +1370,336 @@ export const checklists: Record<string, ChecklistContent> = {
         ],
         step3Reason: "För en översättare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
         step4Questions: "Många översättare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
-    }
+    },
+
+    "systemutvecklare": {
+        slug: "systemutvecklare",
+        professionName: "Systemutvecklare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en systemutvecklare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många systemutvecklare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "webbutvecklare": {
+        slug: "webbutvecklare",
+        professionName: "Webbutvecklare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en webbutvecklare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många webbutvecklare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "hr-specialist": {
+        slug: "hr-specialist",
+        professionName: "HR-specialist",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en hr-specialist är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många hr-specialist undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "hr-chef": {
+        slug: "hr-chef",
+        professionName: "HR-chef",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en hr-chef är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många hr-chef undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "personalvetare": {
+        slug: "personalvetare",
+        professionName: "Personalvetare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en personalvetare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många personalvetare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "receptionist-kontor": {
+        slug: "receptionist-kontor",
+        professionName: "Receptionist (kontor)",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en receptionist (kontor) är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många receptionist (kontor) undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "kontorist": {
+        slug: "kontorist",
+        professionName: "Kontorist",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en kontorist är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många kontorist undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "brevsorterare": {
+        slug: "brevsorterare",
+        professionName: "Brevsorterare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en brevsorterare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många brevsorterare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "tandhygienist": {
+        slug: "tandhygienist",
+        professionName: "Tandhygienist",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en tandhygienist är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många tandhygienist undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "tandskoterska": {
+        slug: "tandskoterska",
+        professionName: "Tandsköterska",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en tandsköterska är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många tandsköterska undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "tandlakare": {
+        slug: "tandlakare",
+        professionName: "Tandläkare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en tandläkare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många tandläkare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "vardcentraladministrator": {
+        slug: "vardcentraladministrator",
+        professionName: "Vårdcentraladministratör",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en vårdcentraladministratör är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många vårdcentraladministratör undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "apotekstekniker": {
+        slug: "apotekstekniker",
+        professionName: "Apotekstekniker",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en apotekstekniker är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många apotekstekniker undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "apotekare": {
+        slug: "apotekare",
+        professionName: "Apotekare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en apotekare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många apotekare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "butiksledare": {
+        slug: "butiksledare",
+        professionName: "Butiksledare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en butiksledare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många butiksledare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "e-handelslogistiker": {
+        slug: "e-handelslogistiker",
+        professionName: "E-handelslogistiker",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en e-handelslogistiker är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många e-handelslogistiker undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "chauffor-latt-lastbil": {
+        slug: "chauffor-latt-lastbil",
+        professionName: "Chaufför lätt lastbil",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en chaufför lätt lastbil är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många chaufför lätt lastbil undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "behorig-elektriker-service": {
+        slug: "behorig-elektriker-service",
+        professionName: "Behörig elektriker-service",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en behörig elektriker-service är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många behörig elektriker-service undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "vaktare": {
+        slug: "vaktare",
+        professionName: "Väktare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en väktare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många väktare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "kundtjanstmedarbetare": {
+        slug: "kundtjanstmedarbetare",
+        professionName: "Kundtjänstmedarbetare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en kundtjänstmedarbetare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många kundtjänstmedarbetare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "telefonsaljare": {
+        slug: "telefonsaljare",
+        professionName: "Telefonsäljare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en telefonsäljare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många telefonsäljare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "hr-administrator": {
+        slug: "hr-administrator",
+        professionName: "HR-administratör",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en hr-administratör är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många hr-administratör undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "arbetsledare-industri": {
+        slug: "arbetsledare-industri",
+        professionName: "Arbetsledare industri",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en arbetsledare industri är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många arbetsledare industri undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "maskinforare-bygg-anlaggning": {
+        slug: "maskinforare-bygg-anlaggning",
+        professionName: "Maskinförare (bygg/anläggning)",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en maskinförare (bygg/anläggning) är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många maskinförare (bygg/anläggning) undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "tradgardsarbetare": {
+        slug: "tradgardsarbetare",
+        professionName: "Trädgårdsarbetare",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en trädgårdsarbetare är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många trädgårdsarbetare undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "kallskanka": {
+        slug: "kallskanka",
+        professionName: "Kallskänka",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en kallskänka är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många kallskänka undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "servicetekniker-maskiner": {
+        slug: "servicetekniker-maskiner",
+        professionName: "Servicetekniker maskiner",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en servicetekniker maskiner är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många servicetekniker maskiner undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "produktionstekniker": {
+        slug: "produktionstekniker",
+        professionName: "Produktionstekniker",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en produktionstekniker är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många produktionstekniker undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "brandman": {
+        slug: "brandman",
+        professionName: "Brandman",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en brandman är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många brandman undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
+    "larmoperator-112": {
+        slug: "larmoperator-112",
+        professionName: "Larmoperatör (112)",
+        step2List: [
+            "Arbetsgivarintyg från din arbetsgivare",
+            "Anställningsbevis",
+            "Uppsägningsbesked"
+        ],
+        step3Reason: "För en larmoperatör (112) är det viktigt att arbetsgivarintyget är korrekt ifyllt för att din a-kassa ska kunna besluta om rätt ersättning.",
+        step4Questions: "Många larmoperatör (112) undrar hur handläggningstiden påverkas om intyg saknas och vad som gäller under väntetiden."
+    },
 };
