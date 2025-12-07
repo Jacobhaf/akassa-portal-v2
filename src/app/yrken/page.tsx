@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import Image from "next/image";
 import { yrken } from "@/data/database";
 
 export const metadata = {
@@ -25,35 +26,45 @@ export default function YrkenPage() {
     const sortedYrken = [...yrken].sort((a, b) => a.name.localeCompare(b.name));
 
     return (
-        <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-            <div className="mb-12 text-center">
-                <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Alla yrken
-                </h1>
-                <p className="mx-auto max-w-2xl text-lg text-gray-600">
-                    Här hittar du alla yrken vi matchar mot a-kassa.
-                </p>
+        <main>
+            {/* Hero Section */}
+            <div className="relative isolate overflow-hidden bg-[#0B1B3F] py-24 sm:py-32">
+                <div className="absolute inset-0 -z-10 h-full w-full">
+                    <Image
+                        src="/assets/images/hero-yrken.png"
+                        alt="Hero background"
+                        fill
+                        className="object-cover object-center opacity-20"
+                        priority
+                    />
+                </div>
+                <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+                    <div className="mx-auto max-w-2xl lg:mx-0">
+                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                            Alla yrken
+                        </h1>
+                        <p className="mt-6 text-lg leading-8 text-blue-100">
+                            Här hittar du alla yrken vi matchar mot a-kassa.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {sortedYrken.map((yrke) => (
-                    <Link
-                        key={yrke.slug}
-                        href={`/yrken/${yrke.slug}`}
-                        // The prompt said: "Varje yrke ska länka vidare till en yrkessida, t.ex. /yrken/larare"
-                        // But existing code in Header had /yrke. I changed Header to /yrken.
-                        // I should check if /yrken/[slug] exists or if I need to create it.
-                        // Existing structure has `src / app / yrke` folder.
-                        // I should probably rename `src / app / yrke` to `src / app / yrken` or create `src / app / yrken / [slug]`.
-                        // For now I will link to `/ yrken / ${ yrke.slug } ` as requested.
-                        className="group flex items-center justify-between rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:border-blue-200 hover:shadow-md"
-                    >
-                        <span className="font-medium text-gray-900 group-hover:text-blue-600">
-                            {yrke.name}
-                        </span>
-                        <span className="text-gray-400 group-hover:text-blue-600">→</span>
-                    </Link>
-                ))}
+            <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {sortedYrken.map((yrke) => (
+                        <Link
+                            key={yrke.slug}
+                            href={`/yrken/${yrke.slug}`}
+                            className="group flex items-center justify-between rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:border-blue-200 hover:shadow-md"
+                        >
+                            <span className="font-medium text-gray-900 group-hover:text-blue-600">
+                                {yrke.name}
+                            </span>
+                            <span className="text-gray-400 group-hover:text-blue-600">→</span>
+                        </Link>
+                    ))}
+                </div>
             </div>
         </main>
     );

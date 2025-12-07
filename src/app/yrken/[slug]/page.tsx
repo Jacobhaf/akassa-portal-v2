@@ -72,7 +72,7 @@ export default function YrkePage({ params }: Props) {
                     <div className="absolute inset-0 z-0 opacity-20">
                         <div style={{ position: 'relative', width: '100%', height: '100%' }}>
                             <Image
-                                src="/assets/images/inkomstforsakring-hero.png"
+                                src="/assets/images/hero-yrken.png"
                                 alt="Profession Hero"
                                 fill
                                 className="object-cover"

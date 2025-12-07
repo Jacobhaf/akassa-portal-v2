@@ -4,6 +4,7 @@ import AkassaCard from "@/components/AkassaCard";
 import YrkeCard from "@/components/YrkeCard";
 import AkassorGrid from "@/components/AkassorGrid";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,43 +32,38 @@ export default function Home() {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
-            <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden bg-gray-900">
-                {/* Background - using CSS gradient as fallback for missing video */}
-                <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-900 to-gray-900">
-                    <div className="absolute inset-0 bg-black/30 z-10" /> {/* Overlay */}
+            <div className="relative isolate overflow-hidden bg-[#0B1B3F] py-24 sm:py-32">
+                <div className="absolute inset-0 -z-10 h-full w-full">
+                    <Image
+                        src="/assets/images/hero-home.png"
+                        alt="Hero background"
+                        fill
+                        className="object-cover object-center opacity-20"
+                        priority
+                    />
                 </div>
-
-                {/* Content */}
-                <div className="relative z-20 flex h-full flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">
-                            Hitta rätt a-kassa för ditt yrke
+                <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+                    <div className="mx-auto max-w-2xl lg:mx-0">
+                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                            Hitta rätt a-kassa för din trygghet
                         </h1>
-                        <p className="text-xl sm:text-2xl text-gray-100 mb-10 max-w-2xl mx-auto drop-shadow-md">
-                            Vi matchar alla Sveriges a-kassor mot typiska yrken så att du kan känna dig trygg.
+                        <p className="mt-6 text-lg leading-8 text-blue-100">
+                            Vi hjälper dig att jämföra och välja rätt arbetslöshetskassa baserat på ditt yrke och din situation.
                         </p>
-
-                        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-2xl border border-white/20 mb-8">
-                            <Search />
-                        </div>
-
-                        <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Link
-                                href="#popular-occupations"
-                                className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-500 transition-all transform hover:scale-105"
-                            >
-                                Kom igång
-                            </Link>
+                        <div className="mt-10 flex items-center gap-x-6">
                             <Link
                                 href="#jamfor"
-                                className="px-8 py-4 bg-white/20 backdrop-blur-md text-white font-bold rounded-lg shadow-lg hover:bg-white/30 transition-all border border-white/30"
+                                className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
                             >
-                                Jämför a-kassor
+                                Jämför nu
+                            </Link>
+                            <Link href="/artiklar/vad-ar-akassa" className="text-sm font-semibold leading-6 text-white">
+                                Vad är a-kassa? <span aria-hidden="true">→</span>
                             </Link>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             {/* Popular Professions Section */}
             <section id="popular-occupations" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
