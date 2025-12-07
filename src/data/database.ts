@@ -622,121 +622,159 @@ export const yrken: Yrke[] = [
         name: "Account manager",
         searchPhrase: "account manager a-kassa",
         recommendedAkassaId: "saljarnas",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "administrator",
         name: "Administratör",
         searchPhrase: "administratör a-kassa",
         recommendedAkassaId: "sts",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "administrator-stat",
         name: "Administratör stat",
         searchPhrase: "administratör stat a-kassa",
         recommendedAkassaId: "sts",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "arkivarie",
         name: "Arkivarie",
         searchPhrase: "arkivarie a-kassa",
         recommendedAkassaId: "sts",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "avdelningschef",
         name: "Avdelningschef",
         searchPhrase: "avdelningschef a-kassa",
         recommendedAkassaId: "ledarna",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "bageriarbetare",
         name: "Bageriarbetare",
         searchPhrase: "bageriarbetare a-kassa",
         recommendedAkassaId: "livs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "banktjansteman",
         name: "Banktjänsteman",
         searchPhrase: "banktjänsteman a-kassa",
         recommendedAkassaId: "ffak",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "barnskotare",
         name: "Barnskötare",
         searchPhrase: "barnskötare a-kassa",
         recommendedAkassaId: "kommunal",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "behandlingsassistent",
         name: "Behandlingsassistent",
         searchPhrase: "behandlingsassistent a-kassa",
         recommendedAkassaId: "vision",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "betongarbetare",
         name: "Betongarbetare",
         searchPhrase: "betongarbetare a-kassa",
         recommendedAkassaId: "byggnads",
+        image: "/assets/images/categories/construction.png",
     },
+
     {
         slug: "bistandshandlaggare",
         name: "Biståndshandläggare",
         searchPhrase: "biståndshandläggare a-kassa",
         recommendedAkassaId: "vision",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "brevbarare",
         name: "Brevbärare",
         searchPhrase: "brevbärare a-kassa",
         recommendedAkassaId: "seko",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "bussforare",
         name: "Bussförare",
         searchPhrase: "bussförare a-kassa",
         recommendedAkassaId: "kommunal",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "butiksbitrade",
         name: "Butiksbiträde",
         searchPhrase: "butiksbiträde a-kassa",
         recommendedAkassaId: "alfa",
     },
+
     {
         slug: "butikssaljare",
         name: "Butikssäljare",
         searchPhrase: "butikssäljare a-kassa",
         recommendedAkassaId: "handels",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "butiksagare",
         name: "Butiksägare",
         searchPhrase: "butiksägare a-kassa",
         recommendedAkassaId: "smaa",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "byggnadsarbetare",
         name: "Byggnadsarbetare",
         searchPhrase: "byggnadsarbetare a-kassa",
         recommendedAkassaId: "byggnads",
+        image: "/assets/images/categories/construction.png",
     },
+
     {
         slug: "cateringpersonal",
         name: "Cateringpersonal",
         searchPhrase: "cateringpersonal a-kassa",
         recommendedAkassaId: "hrak",
     },
+
     {
         slug: "data-och-it-montor",
         name: "Data- och IT-montör",
         searchPhrase: "data- och it-montör a-kassa",
         recommendedAkassaId: "eak",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "distriktschef-lantbruk",
         name: "Distriktschef lantbruk",
         searchPhrase: "distriktschef lantbruk a-kassa",
         recommendedAkassaId: "slak",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "ekonom",
         name: "Ekonom",
@@ -744,6 +782,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "unionen",
         image: "/assets/images/professions/ekonom.png",
     },
+
     {
         slug: "elektriker",
         name: "Elektriker",
@@ -751,336 +790,434 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "eak",
         image: "/assets/images/professions/elektriker.png",
     },
+
     {
         slug: "enhetschef",
         name: "Enhetschef",
         searchPhrase: "enhetschef a-kassa",
         recommendedAkassaId: "ledarna",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "ensamforetagare",
         name: "Ensamföretagare",
         searchPhrase: "ensamföretagare a-kassa",
         recommendedAkassaId: "smaa",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "familjeforetagare-handel",
         name: "Familjeföretagare handel",
         searchPhrase: "familjeföretagare handel a-kassa",
         recommendedAkassaId: "sha",
     },
+
     {
         slug: "fastighetsskotare",
         name: "Fastighetsskötare",
         searchPhrase: "fastighetsskötare a-kassa",
         recommendedAkassaId: "fastighets",
     },
+
     {
         slug: "finansanalytiker",
         name: "Finansanalytiker",
         searchPhrase: "finansanalytiker a-kassa",
         recommendedAkassaId: "ffak",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "flygmekaniker",
         name: "Flygmekaniker",
         searchPhrase: "flygmekaniker a-kassa",
         recommendedAkassaId: "transport",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "fotograf",
         name: "Fotograf",
         searchPhrase: "fotograf a-kassa",
         recommendedAkassaId: "journalist",
     },
+
     {
         slug: "frilansskribent",
         name: "Frilansskribent",
         searchPhrase: "frilansskribent a-kassa",
         recommendedAkassaId: "journalist",
     },
+
     {
         slug: "frisor",
         name: "Frisör",
         searchPhrase: "frisör a-kassa",
         recommendedAkassaId: "handels",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "faltsaljare",
         name: "Fältsäljare",
         searchPhrase: "fältsäljare a-kassa",
         recommendedAkassaId: "saljarnas",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "forpackningsarbetare",
         name: "Förpackningsarbetare",
         searchPhrase: "förpackningsarbetare a-kassa",
         recommendedAkassaId: "gs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "forskollarare",
         name: "Förskollärare",
         searchPhrase: "förskollärare a-kassa",
         recommendedAkassaId: "la",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "forsakringsradgivare",
         name: "Försäkringsrådgivare",
         searchPhrase: "försäkringsrådgivare a-kassa",
         recommendedAkassaId: "ffak",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "foretagsradgivare",
         name: "Företagsrådgivare",
         searchPhrase: "företagsrådgivare a-kassa",
         recommendedAkassaId: "ffak",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "forvaltningschef",
         name: "Förvaltningschef",
         searchPhrase: "förvaltningschef a-kassa",
         recommendedAkassaId: "vision",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "godsmagasinspersonal",
         name: "Godsmagasinspersonal",
         searchPhrase: "godsmagasinspersonal a-kassa",
         recommendedAkassaId: "hamn",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "golvlaggare",
         name: "Golvläggare",
         searchPhrase: "golvläggare a-kassa",
         recommendedAkassaId: "byggnads",
+        image: "/assets/images/categories/construction.png",
     },
+
     {
         slug: "grundskollarare",
         name: "Grundskollärare",
         searchPhrase: "grundskollärare a-kassa",
         recommendedAkassaId: "la",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "gymnasielarare",
         name: "Gymnasielärare",
         searchPhrase: "gymnasielärare a-kassa",
         recommendedAkassaId: "la",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "hamnarbetare",
         name: "Hamnarbetare",
         searchPhrase: "hamnarbetare a-kassa",
         recommendedAkassaId: "hamn",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "handelsforetagare",
         name: "Handelsföretagare",
         searchPhrase: "handelsföretagare a-kassa",
         recommendedAkassaId: "sha",
     },
+
     {
         slug: "handlaggare-myndighet",
         name: "Handläggare myndighet",
         searchPhrase: "handläggare myndighet a-kassa",
         recommendedAkassaId: "sts",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "hissmontor",
         name: "Hissmontör",
         searchPhrase: "hissmontör a-kassa",
         recommendedAkassaId: "eak",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "hotellreceptionist",
         name: "Hotellreceptionist",
         searchPhrase: "hotellreceptionist a-kassa",
         recommendedAkassaId: "hrak",
     },
+
     {
         slug: "hotellstadare",
         name: "Hotellstädare",
         searchPhrase: "hotellstädare a-kassa",
         recommendedAkassaId: "hrak",
     },
+
     {
         slug: "industriarbetare",
         name: "Industriarbetare",
         searchPhrase: "industriarbetare a-kassa",
         recommendedAkassaId: "saak",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "ingenjor",
         name: "Ingenjör",
         searchPhrase: "ingenjör a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "it-konsult",
         name: "IT-konsult",
         searchPhrase: "it konsult a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "it-support-offentlig-sektor",
         name: "IT-support offentlig sektor",
         searchPhrase: "it-support offentlig sektor a-kassa",
         recommendedAkassaId: "sts",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "journalist",
         name: "Journalist",
         searchPhrase: "journalist a-kassa",
         recommendedAkassaId: "journalist",
     },
+
     {
         slug: "kartongtillverkare",
         name: "Kartongtillverkare",
         searchPhrase: "kartongtillverkare a-kassa",
         recommendedAkassaId: "pappers",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "kassapersonal",
         name: "Kassapersonal",
         searchPhrase: "kassapersonal a-kassa",
         recommendedAkassaId: "handels",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "kemiindustriarbetare",
         name: "Kemiindustriarbetare",
         searchPhrase: "kemiindustriarbetare a-kassa",
         recommendedAkassaId: "ifmetall",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "kock",
         name: "Kock",
         searchPhrase: "kock a-kassa",
         recommendedAkassaId: "hrak",
     },
+
     {
         slug: "konditor",
         name: "Konditor",
         searchPhrase: "konditor a-kassa",
         recommendedAkassaId: "livs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "konsult",
         name: "Konsult",
         searchPhrase: "konsult a-kassa",
         recommendedAkassaId: "smaa",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "kraftverksoperator",
         name: "Kraftverksoperatör",
         searchPhrase: "kraftverksoperatör a-kassa",
         recommendedAkassaId: "eak",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "kriminalvardare",
         name: "Kriminalvårdare",
         searchPhrase: "kriminalvårdare a-kassa",
         recommendedAkassaId: "seko",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "kulturarbetare",
         name: "Kulturarbetare",
         searchPhrase: "kulturarbetare a-kassa",
         recommendedAkassaId: "handels",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "kundansvarig",
         name: "Kundansvarig",
         searchPhrase: "kundansvarig a-kassa",
         recommendedAkassaId: "saljarnas",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "kundradgivare",
         name: "Kundrådgivare",
         searchPhrase: "kundrådgivare a-kassa",
         recommendedAkassaId: "ffak",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "kurator",
         name: "Kurator",
         searchPhrase: "kurator a-kassa",
         recommendedAkassaId: "vision",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "kokspersonal",
         name: "Kökspersonal",
         searchPhrase: "kökspersonal a-kassa",
         recommendedAkassaId: "kommunal",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "lagerarbetare",
         name: "Lagerarbetare",
         searchPhrase: "lagerarbetare a-kassa",
         recommendedAkassaId: "handels",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "lagerpersonal",
         name: "Lagerpersonal",
         searchPhrase: "lagerpersonal a-kassa",
         recommendedAkassaId: "saak",
     },
+
     {
         slug: "lantbrukskonsulent",
         name: "Lantbrukskonsulent",
         searchPhrase: "lantbrukskonsulent a-kassa",
         recommendedAkassaId: "slak",
     },
+
     {
         slug: "larmtekniker",
         name: "Larmtekniker",
         searchPhrase: "larmtekniker a-kassa",
         recommendedAkassaId: "eak",
     },
+
     {
         slug: "lastare",
         name: "Lastare",
         searchPhrase: "lastare a-kassa",
         recommendedAkassaId: "hamn",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "lastbilschauffor",
         name: "Lastbilschaufför",
         searchPhrase: "lastbilschaufför a-kassa",
         recommendedAkassaId: "transport",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "livsmedelsindustriarbetare",
         name: "Livsmedelsindustriarbetare",
         searchPhrase: "livsmedelsindustriarbetare a-kassa",
         recommendedAkassaId: "livs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "logistikforetagare",
         name: "Logistikföretagare",
         searchPhrase: "logistikföretagare a-kassa",
         recommendedAkassaId: "sha",
     },
+
     {
         slug: "logistikoperator",
         name: "Logistikoperatör",
         searchPhrase: "logistikoperatör a-kassa",
         recommendedAkassaId: "hamn",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "lokforare",
         name: "Lokförare",
         searchPhrase: "lokförare a-kassa",
         recommendedAkassaId: "seko",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "lokalvardare",
         name: "Lokalvårdare",
         searchPhrase: "lokalvårdare a-kassa",
         recommendedAkassaId: "fastighets",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "lakemedelsoperator",
         name: "Läkemedelsoperatör",
         searchPhrase: "läkemedelsoperatör a-kassa",
         recommendedAkassaId: "ifmetall",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "larare",
         name: "Lärare",
@@ -1088,120 +1225,153 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "la",
         image: "/assets/images/professions/larare.png",
     },
+
     {
         slug: "marknadsforare",
         name: "Marknadsförare",
         searchPhrase: "marknadsförare a-kassa",
         recommendedAkassaId: "saljarnas",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "massaarbetare",
         name: "Massaarbetare",
         searchPhrase: "massaarbetare a-kassa",
         recommendedAkassaId: "pappers",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "matros",
         name: "Matros",
         searchPhrase: "matros a-kassa",
         recommendedAkassaId: "seko",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "mejeriarbetare",
         name: "Mejeriarbetare",
         searchPhrase: "mejeriarbetare a-kassa",
         recommendedAkassaId: "livs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "montor",
         name: "Montör",
         searchPhrase: "montör a-kassa",
         recommendedAkassaId: "ifmetall",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "murare",
         name: "Murare",
         searchPhrase: "murare a-kassa",
         recommendedAkassaId: "byggnads",
+        image: "/assets/images/categories/construction.png",
     },
+
     {
         slug: "malare",
         name: "Målare",
         searchPhrase: "målare a-kassa",
         recommendedAkassaId: "byggnads",
+        image: "/assets/images/categories/construction.png",
     },
+
     {
         slug: "pappersmaskinsoperator",
         name: "Pappersmaskinsoperatör",
         searchPhrase: "pappersmaskinsoperatör a-kassa",
         recommendedAkassaId: "pappers",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "pappersskarare",
         name: "Pappersskärare",
         searchPhrase: "pappersskärare a-kassa",
         recommendedAkassaId: "pappers",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "personalhandlaggare",
         name: "Personalhandläggare",
         searchPhrase: "personalhandläggare a-kassa",
         recommendedAkassaId: "sts",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "produktionsledare-skog",
         name: "Produktionsledare skog",
         searchPhrase: "produktionsledare skog a-kassa",
         recommendedAkassaId: "slak",
     },
+
     {
         slug: "projektledare",
         name: "Projektledare",
         searchPhrase: "projektledare a-kassa",
         recommendedAkassaId: "ledarna",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "redaktor",
         name: "Redaktör",
         searchPhrase: "redaktör a-kassa",
         recommendedAkassaId: "journalist",
     },
+
     {
         slug: "rektor",
         name: "Rektor",
         searchPhrase: "rektor a-kassa",
         recommendedAkassaId: "la",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "restaurangagare",
         name: "Restaurangägare",
         searchPhrase: "restaurangägare a-kassa",
         recommendedAkassaId: "smaa",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "sanerare",
         name: "Sanerare",
         searchPhrase: "sanerare a-kassa",
         recommendedAkassaId: "fastighets",
     },
+
     {
         slug: "servicearbetare",
         name: "Servicearbetare",
         searchPhrase: "servicearbetare a-kassa",
         recommendedAkassaId: "saak",
     },
+
     {
         slug: "serviceforetagare",
         name: "Serviceföretagare",
         searchPhrase: "serviceföretagare a-kassa",
         recommendedAkassaId: "sha",
     },
+
     {
         slug: "serveringspersonal",
         name: "Serveringspersonal",
         searchPhrase: "serveringspersonal a-kassa",
         recommendedAkassaId: "hrak",
     },
+
     {
         slug: "sjukskoterska",
         name: "Sjuksköterska",
@@ -1209,24 +1379,30 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "aea",
         image: "/assets/images/professions/sjukskoterska.png",
     },
+
     {
         slug: "skogskonsulent",
         name: "Skogskonsulent",
         searchPhrase: "skogskonsulent a-kassa",
         recommendedAkassaId: "slak",
     },
+
     {
         slug: "skogsmaskinforare",
         name: "Skogsmaskinförare",
         searchPhrase: "skogsmaskinförare a-kassa",
         recommendedAkassaId: "gs",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "slaktare",
         name: "Slaktare",
         searchPhrase: "slaktare a-kassa",
         recommendedAkassaId: "livs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "snickare",
         name: "Snickare",
@@ -1234,90 +1410,118 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "byggnads",
         image: "/assets/images/professions/snickare.png",
     },
+
     {
         slug: "socialsekreterare",
         name: "Socialsekreterare",
         searchPhrase: "socialsekreterare a-kassa",
         recommendedAkassaId: "vision",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "studie-och-yrkesvagledare",
         name: "Studie- och yrkesvägledare",
         searchPhrase: "studie- och yrkesvägledare a-kassa",
         recommendedAkassaId: "la",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "svetsare",
         name: "Svetsare",
         searchPhrase: "svetsare a-kassa",
         recommendedAkassaId: "ifmetall",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "sagverksarbetare",
         name: "Sågverksarbetare",
         searchPhrase: "sågverksarbetare a-kassa",
         recommendedAkassaId: "gs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "saljare",
         name: "Säljare",
         searchPhrase: "säljare a-kassa",
         recommendedAkassaId: "saljarnas",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "saljare-tjansteman",
         name: "Säljare tjänstemän",
         searchPhrase: "säljare tjänstemän a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "taxichauffor",
         name: "Taxichaufför",
         searchPhrase: "taxichaufför a-kassa",
         recommendedAkassaId: "transport",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "taxiforetagare",
         name: "Taxiföretagare",
         searchPhrase: "taxiföretagare a-kassa",
         recommendedAkassaId: "smaa",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "teamledare",
         name: "Teamledare",
         searchPhrase: "teamledare a-kassa",
         recommendedAkassaId: "ledarna",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "terminalarbetare",
         name: "Terminalarbetare",
         searchPhrase: "terminalarbetare a-kassa",
         recommendedAkassaId: "hamn",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "tjansteman",
         name: "Tjänsteman",
         searchPhrase: "tjänsteman a-kassa",
         recommendedAkassaId: "saak",
     },
+
     {
         slug: "tryckare",
         name: "Tryckare",
         searchPhrase: "tryckare a-kassa",
         recommendedAkassaId: "gs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "tryckpappersarbetare",
         name: "Tryckpappersarbetare",
         searchPhrase: "tryckpappersarbetare a-kassa",
         recommendedAkassaId: "pappers",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "trahusmontor",
         name: "Trähusmontör",
         searchPhrase: "trähusmontör a-kassa",
         recommendedAkassaId: "gs",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "underskoterska",
         name: "Undersköterska",
@@ -1325,42 +1529,53 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "kommunal",
         image: "/assets/images/professions/underskoterska.png",
     },
+
     {
         slug: "vd",
         name: "VD",
         searchPhrase: "vd a-kassa",
         recommendedAkassaId: "ledarna",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "verktygsmakare",
         name: "Verktygsmakare",
         searchPhrase: "verktygsmakare a-kassa",
         recommendedAkassaId: "ifmetall",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "virkeskopare",
         name: "Virkesköpare",
         searchPhrase: "virkesköpare a-kassa",
         recommendedAkassaId: "slak",
     },
+
     {
         slug: "vvs-arbetare",
         name: "VVS-arbetare",
         searchPhrase: "vvs-arbetare a-kassa",
         recommendedAkassaId: "fastighets",
     },
+
     {
         slug: "vvs-montor",
         name: "VVS-montör",
         searchPhrase: "vvs-montör a-kassa",
         recommendedAkassaId: "seko",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "aldreomsorgspersonal",
         name: "Äldreomsorgspersonal",
         searchPhrase: "äldreomsorgspersonal a-kassa",
         recommendedAkassaId: "kommunal",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "oversattare",
         name: "Översättare",
@@ -1368,184 +1583,241 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "journalist",
     },
 
+
     {
         slug: "systemutvecklare",
         name: "Systemutvecklare",
         searchPhrase: "systemutvecklare a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "webbutvecklare",
         name: "Webbutvecklare",
         searchPhrase: "webbutvecklare a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "hr-specialist",
         name: "HR-specialist",
         searchPhrase: "hr-specialist a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "hr-chef",
         name: "HR-chef",
         searchPhrase: "hr-chef a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "personalvetare",
         name: "Personalvetare",
         searchPhrase: "personalvetare a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "receptionist-kontor",
         name: "Receptionist (kontor)",
         searchPhrase: "receptionist (kontor) a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "kontorist",
         name: "Kontorist",
         searchPhrase: "kontorist a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "brevsorterare",
         name: "Brevsorterare",
         searchPhrase: "brevsorterare a-kassa",
         recommendedAkassaId: "seko",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "tandhygienist",
         name: "Tandhygienist",
         searchPhrase: "tandhygienist a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "tandskoterska",
         name: "Tandsköterska",
         searchPhrase: "tandsköterska a-kassa",
         recommendedAkassaId: "vision",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "tandlakare",
         name: "Tandläkare",
         searchPhrase: "tandläkare a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "vardcentraladministrator",
         name: "Vårdcentraladministratör",
         searchPhrase: "vårdcentraladministratör a-kassa",
         recommendedAkassaId: "vision",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "apotekstekniker",
         name: "Apotekstekniker",
         searchPhrase: "apotekstekniker a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "apotekare",
         name: "Apotekare",
         searchPhrase: "apotekare a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "butiksledare",
         name: "Butiksledare",
         searchPhrase: "butiksledare a-kassa",
         recommendedAkassaId: "handels",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "e-handelslogistiker",
         name: "E-handelslogistiker",
         searchPhrase: "e-handelslogistiker a-kassa",
         recommendedAkassaId: "handels",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "chauffor-latt-lastbil",
         name: "Chaufför lätt lastbil",
         searchPhrase: "chaufför lätt lastbil a-kassa",
         recommendedAkassaId: "transport",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "behorig-elektriker-service",
         name: "Behörig elektriker-service",
         searchPhrase: "behörig elektriker-service a-kassa",
         recommendedAkassaId: "eak",
     },
+
     {
         slug: "vaktare",
         name: "Väktare",
         searchPhrase: "väktare a-kassa",
         recommendedAkassaId: "transport",
+        image: "/assets/images/categories/transport.png",
     },
+
     {
         slug: "kundtjanstmedarbetare",
         name: "Kundtjänstmedarbetare",
         searchPhrase: "kundtjänstmedarbetare a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "telefonsaljare",
         name: "Telefonsäljare",
         searchPhrase: "telefonsäljare a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "hr-administrator",
         name: "HR-administratör",
         searchPhrase: "hr-administratör a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "arbetsledare-industri",
         name: "Arbetsledare industri",
         searchPhrase: "arbetsledare industri a-kassa",
         recommendedAkassaId: "ifmetall",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "maskinforare-bygg-anlaggning",
         name: "Maskinförare (bygg/anläggning)",
         searchPhrase: "maskinförare (bygg/anläggning) a-kassa",
         recommendedAkassaId: "byggnads",
+        image: "/assets/images/categories/construction.png",
     },
+
     {
         slug: "tradgardsarbetare",
         name: "Trädgårdsarbetare",
         searchPhrase: "trädgårdsarbetare a-kassa",
         recommendedAkassaId: "kommunal",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "kallskanka",
         name: "Kallskänka",
         searchPhrase: "kallskänka a-kassa",
         recommendedAkassaId: "hrak",
     },
+
     {
         slug: "servicetekniker-maskiner",
         name: "Servicetekniker maskiner",
         searchPhrase: "servicetekniker maskiner a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/categories/office.png",
     },
+
     {
         slug: "produktionstekniker",
         name: "Produktionstekniker",
         searchPhrase: "produktionstekniker a-kassa",
         recommendedAkassaId: "ifmetall",
+        image: "/assets/images/categories/industry.png",
     },
+
     {
         slug: "brandman",
         name: "Brandman",
         searchPhrase: "brandman a-kassa",
         recommendedAkassaId: "kommunal",
+        image: "/assets/images/categories/healthcare.png",
     },
+
     {
         slug: "larmoperator-112",
         name: "Larmoperatör (112)",
         searchPhrase: "larmoperatör (112) a-kassa",
         recommendedAkassaId: "sts",
-    },
-];
+        image: "/assets/images/categories/industry.png",
+    },];
