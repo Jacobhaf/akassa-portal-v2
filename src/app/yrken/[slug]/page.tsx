@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { yrken, akassor } from "@/data/database";
 import { famousPeople } from "@/data/famousPeople";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Props {
     params: {
@@ -21,12 +22,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${yrke.name} a - kassa – Bästa val 2025 | A - kassa Portal`,
-        description: `Jobbar du som ${yrke.name}? Här ser du vilken a - kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
+        title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
+        description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
+        alternates: {
+            canonical: `/yrken/${yrke.slug}`,
+        },
         openGraph: {
-            title: `${yrke.name} a - kassa – Bästa val 2025 | A - kassa Portal`,
-            description: `Jobbar du som ${yrke.name}? Här ser du vilken a - kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
-            url: `https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/yrken/${yrke.slug}`,
+            title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
+            description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
+            url: `https://valjakassa.se/yrken/${yrke.slug}`,
             images: [
                 {
                     url: "/hero-poster.jpg",
@@ -63,23 +67,37 @@ export default function YrkePage({ params }: Props) {
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm overflow-hidden">
                 {/* Header */}
-                <div className="bg-green-700 px-8 py-10 text-white">
-                    <h1 className="text-3xl sm:text-4xl font-bold mb-4">
-                        {yrke.name} a-kassa – vilken a-kassa ska jag välja 2025?
-                    </h1>
-                    <p className="text-green-100 text-lg max-w-2xl">
-                        Jobbar du som {yrke.name} och undrar vilken a-kassa du ska välja?
-                        Här går vi igenom vilken a-kassa som rekommenderas för {yrke.name}{" "}
-                        och varför, hur ersättningen fungerar och ungefär vad en {yrke.name}{" "}
-                        tjänar 2025.
-                    </p>
-                    <div className="mt-8">
-                        <Link
-                            href={`/yrken/${yrke.slug}/checklista`}
-                            className="inline-flex items-center gap-2 text-white font-semibold underline decoration-green-300 underline-offset-4 hover:decoration-white hover:text-green-50 transition-colors"
-                        >
-                            <span className="text-xl">📋</span> Se checklista: Vad gör jag om jag blir arbetslös? →
-                        </Link>
+                {/* Hero Header */}
+                <div className="relative bg-[#0B1B3F] text-white overflow-hidden">
+                    <div className="absolute inset-0 z-0 opacity-20">
+                        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                            <Image
+                                src="/assets/images/inkomstforsakring-hero.png"
+                                alt="Profession Hero"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
+                    </div>
+                    <div className="relative z-10 px-8 py-12 sm:py-16">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                            {yrke.name} a-kassa – vilken a-kassa ska jag välja 2025?
+                        </h1>
+                        <p className="text-blue-100 text-lg sm:text-xl max-w-2xl leading-relaxed mb-8">
+                            Jobbar du som {yrke.name} och undrar vilken a-kassa du ska välja?
+                            Här går vi igenom vilken a-kassa som rekommenderas för {yrke.name}{" "}
+                            och varför, hur ersättningen fungerar och ungefär vad en {yrke.name}{" "}
+                            tjänar 2025.
+                        </p>
+                        <div className="mt-8">
+                            <Link
+                                href={`/yrken/${yrke.slug}/checklista`}
+                                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all transform hover:scale-105"
+                            >
+                                <span className="text-xl">📋</span> Se checklista för {yrke.name} →
+                            </Link>
+                        </div>
                     </div>
                 </div>
 

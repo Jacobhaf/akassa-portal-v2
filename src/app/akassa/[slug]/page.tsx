@@ -53,46 +53,62 @@ export default function AkassaPage({ params }: Props) {
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm overflow-hidden">
                 {/* Header */}
-                <div className="bg-blue-600 px-8 py-10 text-white">
-                    <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-6">
-                        {(() => {
-                            const logoInfo = logoData.find((l) => l.slug === akassa.id);
-                            const logoUrl = logoInfo?.logo;
-
-                            if (logoUrl) {
-                                return (
-                                    <div className="relative w-24 h-24 bg-white rounded-xl shadow-lg flex-shrink-0 p-2">
-                                        <Image
-                                            src={logoUrl}
-                                            alt={`${akassa.name} logotyp`}
-                                            fill
-                                            className="object-contain p-2"
-                                            sizes="96px"
-                                        />
-                                    </div>
-                                );
-                            }
-                            return null;
-                        })()}
-                        <h1 className="text-3xl sm:text-4xl font-bold">
-                            {akassa.name} – avgift, villkor och vilka yrken som passar 2025
-                        </h1>
+                {/* Hero Header */}
+                <div className="relative bg-[#0B1B3F] text-white overflow-hidden">
+                    {/* Background Image */}
+                    <div className="absolute inset-0 z-0 opacity-20">
+                        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                            <Image
+                                src="/assets/images/inkomstforsakring-hero.png"
+                                alt="A-kassa Hero"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
                     </div>
-                    <p className="text-blue-100 text-lg max-w-2xl">
-                        {akassa.name} är en a-kassa för{" "}
-                        {akassa.primaryIndustries.join(", ")}. Här går vi igenom
-                        medlemskrav, avgifter och vilka yrken som brukar ha nytta av att gå
-                        med i just {akassa.name}.
-                    </p>
-                    <div className="mt-8">
-                        <a
-                            href={akassa.website}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition-colors"
-                        >
-                            Se om {akassa.name} passar dig
-                        </a>
+
+                    <div className="relative z-10 px-8 py-12 sm:py-16">
+                        <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-6">
+                            {(() => {
+                                const logoInfo = logoData.find((l) => l.slug === akassa.id);
+                                const logoUrl = logoInfo?.logo;
+
+                                if (logoUrl) {
+                                    return (
+                                        <div className="relative w-24 h-24 bg-white rounded-xl shadow-lg flex-shrink-0 p-2">
+                                            <Image
+                                                src={logoUrl}
+                                                alt={`${akassa.name} logotyp`}
+                                                fill
+                                                className="object-contain p-2"
+                                                sizes="96px"
+                                            />
+                                        </div>
+                                    );
+                                }
+                                return null;
+                            })()}
+                            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+                                {akassa.name} – avgift, villkor och vilka yrken som passar 2025
+                            </h1>
+                        </div>
+                        <p className="text-blue-100 text-lg max-w-2xl mb-8 leading-relaxed">
+                            {akassa.name} är en a-kassa för{" "}
+                            {akassa.primaryIndustries.join(", ")}. Här går vi igenom
+                            medlemskrav, avgifter och vilka yrken som brukar ha nytta av att gå
+                            med i just {akassa.name}.
+                        </p>
+                        <div>
+                            <a
+                                href={akassa.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block bg-white text-blue-900 font-bold py-3 px-8 rounded-full shadow-md hover:bg-gray-100 transition-colors"
+                            >
+                                Se om {akassa.name} passar dig
+                            </a>
+                        </div>
                     </div>
                 </div>
 
