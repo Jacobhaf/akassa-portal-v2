@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { TrendingUp, Clock, ShieldAlert, Briefcase } from "lucide-react";
 import { akassor } from "@/data/akassor";
 
 export const metadata = {
@@ -60,46 +61,95 @@ export default function InkomstforsakringPage() {
             </section>
 
             {/* 3. WHEN IS IT WORTH IT & HOW IT WORKS */}
-            <section className="bg-gray-50 py-16">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">När är det värt att ha inkomstförsäkring?</h2>
+            <section className="bg-gray-50 py-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
+                        När är det värt att ha inkomstförsäkring?
+                    </h2>
 
-                    <div className="space-y-12">
-                        <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                            <h3 className="text-2xl font-bold text-blue-900 mb-4">1. Du tjänar över a-kassans tak</h3>
-                            <p className="text-gray-700 mb-4">
+                    <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+                        {/* 1. Salary over ceiling */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 transition-all hover:-translate-y-1">
+                            <div className="flex items-start gap-4 mb-6">
+                                <div className="p-3 bg-blue-100 text-blue-600 rounded-lg">
+                                    <TrendingUp className="w-8 h-8" />
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mt-1">1. Du tjänar över a-kassans tak</h3>
+                            </div>
+                            <p className="text-gray-700 leading-relaxed mb-6">
                                 Om du tjänar runt eller över a-kassans tak (cirka 33–34 000 kr/mån före skatt) får du inte 80 % av hela din lön från a-kassan – bara 80 % upp till taket. En inkomstförsäkring täcker glappet mellan taket och din faktiska lön.
                             </p>
-                            <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-800 font-mono">
-                                <strong>Exempel (avrundat):</strong><br />
-                                Lön: 36 000 kr/mån<br />
-                                A-kassa: ≈ 26 000 kr/mån<br />
-                                <span className="text-green-700">Inkomstförsäkring: + några tusenlappar</span><br />
-                                Total: ≈ 80% av 36 000 kr
+                            <div className="bg-gray-50 p-5 rounded-xl border border-gray-100">
+                                <p className="font-bold text-gray-900 mb-2 border-b border-gray-200 pb-2">Exempel (avrundat):</p>
+                                <div className="space-y-1 font-mono text-sm text-gray-700">
+                                    <div className="flex justify-between">
+                                        <span>Lön:</span>
+                                        <span>36 000 kr/mån</span>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <span>A-kassa:</span>
+                                        <span>≈ 26 000 kr/mån</span>
+                                    </div>
+                                    <div className="flex justify-between text-green-600 font-bold bg-green-50 px-2 py-1 -mx-2 rounded">
+                                        <span>Inkomstförsäkring:</span>
+                                        <span>+ några tusenlappar</span>
+                                    </div>
+                                    <div className="flex justify-between font-bold pt-2 border-t border-gray-200 mt-1">
+                                        <span>Total:</span>
+                                        <span>≈ 80% av 36 000 kr</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">2. Du vill ha längre ersättning</h3>
-                                <p className="text-gray-600">
-                                    En full a-kasseperiod är normalt 300 dagar. Många inkomstförsäkringar ger extra trygghet i t.ex. 100, 200 eller 300 dagar, och kan ofta förlängas med tillägg.
-                                </p>
+                        {/* 2. Longer Duration */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 transition-all hover:-translate-y-1">
+                            <div className="flex items-start gap-4 mb-6">
+                                <div className="p-3 bg-green-100 text-green-600 rounded-lg">
+                                    <Clock className="w-8 h-8" />
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mt-1">2. Du vill ha längre ersättning</h3>
                             </div>
-                            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">3. Utsatt bransch</h3>
-                                <p className="text-gray-600">
-                                    Jobbar du inom handel, transport, eller kultur? Risken för arbetslöshet kan vara högre. Då är extra skydd för dina fasta kostnader (lån, hyra, barn) avgörande.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                            <h3 className="text-xl font-bold text-gray-900 mb-3">4. Chef, specialist eller egenföretagare</h3>
-                            <p className="text-gray-700">
-                                <strong>Chefer & specialister:</strong> Har ofta hög lön vilket skapar ett stort glapp utan försäkring.<br />
-                                <strong>Egenföretagare:</strong> Kan behöva skydd vid konkurs eller likvidation.
+                            <p className="text-gray-700 leading-relaxed">
+                                En full a-kasseperiod är normalt 300 dagar. Många inkomstförsäkringar ger extra trygghet i t.ex. 100, 200 eller 300 dagar, och kan ofta förlängas med tillägg.
                             </p>
+                        </div>
+
+                        {/* 3. Vulnerable Industry */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 transition-all hover:-translate-y-1">
+                            <div className="flex items-start gap-4 mb-6">
+                                <div className="p-3 bg-orange-100 text-orange-600 rounded-lg">
+                                    <ShieldAlert className="w-8 h-8" />
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mt-1">3. Utsatt bransch</h3>
+                            </div>
+                            <p className="text-gray-700 leading-relaxed mb-4">
+                                Jobbar du inom handel, transport, eller kultur? Risken för arbetslöshet kan vara högre. Då är extra skydd för dina fasta kostnader (lån, hyra, barn) avgörande.
+                            </p>
+                        </div>
+
+                        {/* 4. Specialist / Boss */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 transition-all hover:-translate-y-1">
+                            <div className="flex items-start gap-4 mb-6">
+                                <div className="p-3 bg-purple-100 text-purple-600 rounded-lg">
+                                    <Briefcase className="w-8 h-8" />
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mt-1">4. Chef, specialist eller egenföretagare</h3>
+                            </div>
+                            <ul className="space-y-4">
+                                <li className="flex gap-3">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-purple-600 mt-2.5 flex-shrink-0"></span>
+                                    <p className="text-gray-700">
+                                        <strong>Chefer & specialister:</strong> Har ofta hög lön vilket skapar ett stort glapp utan försäkring.
+                                    </p>
+                                </li>
+                                <li className="flex gap-3">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-purple-600 mt-2.5 flex-shrink-0"></span>
+                                    <p className="text-gray-700">
+                                        <strong>Egenföretagare:</strong> Kan behöva skydd vid konkurs eller likvidation.
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
