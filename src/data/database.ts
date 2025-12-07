@@ -625,6 +625,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "administrator",
         name: "Administratör",
@@ -632,6 +633,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "sts",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "administrator-stat",
@@ -641,6 +643,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "arkivarie",
         name: "Arkivarie",
@@ -648,6 +651,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "sts",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "avdelningschef",
@@ -657,6 +661,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "bageriarbetare",
         name: "Bageriarbetare",
@@ -664,6 +669,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "livs",
         image: "/assets/images/categories/industry.png",
     },
+
 
     {
         slug: "banktjansteman",
@@ -673,6 +679,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "barnskotare",
         name: "Barnskötare",
@@ -680,6 +687,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "kommunal",
         image: "/assets/images/categories/healthcare.png",
     },
+
 
     {
         slug: "behandlingsassistent",
@@ -689,6 +697,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/healthcare.png",
     },
 
+
     {
         slug: "betongarbetare",
         name: "Betongarbetare",
@@ -696,6 +705,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "byggnads",
         image: "/assets/images/categories/construction.png",
     },
+
 
     {
         slug: "bistandshandlaggare",
@@ -705,6 +715,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "brevbarare",
         name: "Brevbärare",
@@ -712,6 +723,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "seko",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "bussforare",
@@ -721,12 +733,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "butiksbitrade",
         name: "Butiksbiträde",
         searchPhrase: "butiksbiträde a-kassa",
         recommendedAkassaId: "alfa",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "butikssaljare",
@@ -736,6 +751,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "butiksagare",
         name: "Butiksägare",
@@ -743,6 +759,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "smaa",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "byggnadsarbetare",
@@ -752,12 +769,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/construction.png",
     },
 
+
     {
         slug: "cateringpersonal",
         name: "Cateringpersonal",
         searchPhrase: "cateringpersonal a-kassa",
         recommendedAkassaId: "hrak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "data-och-it-montor",
@@ -767,6 +787,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "distriktschef-lantbruk",
         name: "Distriktschef lantbruk",
@@ -774,6 +795,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "slak",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "ekonom",
@@ -783,6 +805,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/professions/ekonom.png",
     },
 
+
     {
         slug: "elektriker",
         name: "Elektriker",
@@ -790,6 +813,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "eak",
         image: "/assets/images/professions/elektriker.png",
     },
+
 
     {
         slug: "enhetschef",
@@ -799,6 +823,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "ensamforetagare",
         name: "Ensamföretagare",
@@ -807,19 +832,24 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "familjeforetagare-handel",
         name: "Familjeföretagare handel",
         searchPhrase: "familjeföretagare handel a-kassa",
         recommendedAkassaId: "sha",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "fastighetsskotare",
         name: "Fastighetsskötare",
         searchPhrase: "fastighetsskötare a-kassa",
         recommendedAkassaId: "fastighets",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "finansanalytiker",
@@ -829,6 +859,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "flygmekaniker",
         name: "Flygmekaniker",
@@ -837,19 +868,24 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "fotograf",
         name: "Fotograf",
         searchPhrase: "fotograf a-kassa",
         recommendedAkassaId: "journalist",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "frilansskribent",
         name: "Frilansskribent",
         searchPhrase: "frilansskribent a-kassa",
         recommendedAkassaId: "journalist",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "frisor",
@@ -859,6 +895,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "faltsaljare",
         name: "Fältsäljare",
@@ -866,6 +903,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "saljarnas",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "forpackningsarbetare",
@@ -875,6 +913,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "forskollarare",
         name: "Förskollärare",
@@ -882,6 +921,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "la",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "forsakringsradgivare",
@@ -891,6 +931,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "foretagsradgivare",
         name: "Företagsrådgivare",
@@ -898,6 +939,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "ffak",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "forvaltningschef",
@@ -907,6 +949,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "godsmagasinspersonal",
         name: "Godsmagasinspersonal",
@@ -914,6 +957,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "hamn",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "golvlaggare",
@@ -923,6 +967,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/construction.png",
     },
 
+
     {
         slug: "grundskollarare",
         name: "Grundskollärare",
@@ -930,6 +975,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "la",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "gymnasielarare",
@@ -939,6 +985,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "hamnarbetare",
         name: "Hamnarbetare",
@@ -947,12 +994,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "handelsforetagare",
         name: "Handelsföretagare",
         searchPhrase: "handelsföretagare a-kassa",
         recommendedAkassaId: "sha",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "handlaggare-myndighet",
@@ -962,6 +1012,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "hissmontor",
         name: "Hissmontör",
@@ -970,19 +1021,24 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "hotellreceptionist",
         name: "Hotellreceptionist",
         searchPhrase: "hotellreceptionist a-kassa",
         recommendedAkassaId: "hrak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "hotellstadare",
         name: "Hotellstädare",
         searchPhrase: "hotellstädare a-kassa",
         recommendedAkassaId: "hrak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "industriarbetare",
@@ -992,6 +1048,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "ingenjor",
         name: "Ingenjör",
@@ -999,6 +1056,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "aea",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "it-konsult",
@@ -1008,6 +1066,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "it-support-offentlig-sektor",
         name: "IT-support offentlig sektor",
@@ -1016,12 +1075,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "journalist",
         name: "Journalist",
         searchPhrase: "journalist a-kassa",
         recommendedAkassaId: "journalist",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "kartongtillverkare",
@@ -1031,6 +1093,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "kassapersonal",
         name: "Kassapersonal",
@@ -1038,6 +1101,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "handels",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "kemiindustriarbetare",
@@ -1047,12 +1111,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "kock",
         name: "Kock",
         searchPhrase: "kock a-kassa",
         recommendedAkassaId: "hrak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "konditor",
@@ -1062,6 +1129,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "konsult",
         name: "Konsult",
@@ -1069,6 +1137,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "smaa",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "kraftverksoperator",
@@ -1078,6 +1147,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "kriminalvardare",
         name: "Kriminalvårdare",
@@ -1085,6 +1155,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "seko",
         image: "/assets/images/categories/healthcare.png",
     },
+
 
     {
         slug: "kulturarbetare",
@@ -1094,6 +1165,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "kundansvarig",
         name: "Kundansvarig",
@@ -1101,6 +1173,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "saljarnas",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "kundradgivare",
@@ -1110,6 +1183,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "kurator",
         name: "Kurator",
@@ -1117,6 +1191,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "vision",
         image: "/assets/images/categories/healthcare.png",
     },
+
 
     {
         slug: "kokspersonal",
@@ -1126,6 +1201,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/healthcare.png",
     },
 
+
     {
         slug: "lagerarbetare",
         name: "Lagerarbetare",
@@ -1134,26 +1210,33 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "lagerpersonal",
         name: "Lagerpersonal",
         searchPhrase: "lagerpersonal a-kassa",
         recommendedAkassaId: "saak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "lantbrukskonsulent",
         name: "Lantbrukskonsulent",
         searchPhrase: "lantbrukskonsulent a-kassa",
         recommendedAkassaId: "slak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "larmtekniker",
         name: "Larmtekniker",
         searchPhrase: "larmtekniker a-kassa",
         recommendedAkassaId: "eak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "lastare",
@@ -1163,6 +1246,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "lastbilschauffor",
         name: "Lastbilschaufför",
@@ -1170,6 +1254,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "transport",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "livsmedelsindustriarbetare",
@@ -1179,12 +1264,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "logistikforetagare",
         name: "Logistikföretagare",
         searchPhrase: "logistikföretagare a-kassa",
         recommendedAkassaId: "sha",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "logistikoperator",
@@ -1194,6 +1282,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "lokforare",
         name: "Lokförare",
@@ -1201,6 +1290,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "seko",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "lokalvardare",
@@ -1210,6 +1300,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/healthcare.png",
     },
 
+
     {
         slug: "lakemedelsoperator",
         name: "Läkemedelsoperatör",
@@ -1217,6 +1308,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "ifmetall",
         image: "/assets/images/categories/industry.png",
     },
+
 
     {
         slug: "larare",
@@ -1226,6 +1318,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/professions/larare.png",
     },
 
+
     {
         slug: "marknadsforare",
         name: "Marknadsförare",
@@ -1233,6 +1326,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "saljarnas",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "massaarbetare",
@@ -1242,6 +1336,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "matros",
         name: "Matros",
@@ -1249,6 +1344,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "seko",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "mejeriarbetare",
@@ -1258,6 +1354,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "montor",
         name: "Montör",
@@ -1265,6 +1362,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "ifmetall",
         image: "/assets/images/categories/industry.png",
     },
+
 
     {
         slug: "murare",
@@ -1274,6 +1372,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/construction.png",
     },
 
+
     {
         slug: "malare",
         name: "Målare",
@@ -1281,6 +1380,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "byggnads",
         image: "/assets/images/categories/construction.png",
     },
+
 
     {
         slug: "pappersmaskinsoperator",
@@ -1290,6 +1390,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "pappersskarare",
         name: "Pappersskärare",
@@ -1297,6 +1398,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "pappers",
         image: "/assets/images/categories/industry.png",
     },
+
 
     {
         slug: "personalhandlaggare",
@@ -1306,12 +1408,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "produktionsledare-skog",
         name: "Produktionsledare skog",
         searchPhrase: "produktionsledare skog a-kassa",
         recommendedAkassaId: "slak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "projektledare",
@@ -1321,12 +1426,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "redaktor",
         name: "Redaktör",
         searchPhrase: "redaktör a-kassa",
         recommendedAkassaId: "journalist",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "rektor",
@@ -1336,6 +1444,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "restaurangagare",
         name: "Restaurangägare",
@@ -1344,33 +1453,42 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "sanerare",
         name: "Sanerare",
         searchPhrase: "sanerare a-kassa",
         recommendedAkassaId: "fastighets",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "servicearbetare",
         name: "Servicearbetare",
         searchPhrase: "servicearbetare a-kassa",
         recommendedAkassaId: "saak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "serviceforetagare",
         name: "Serviceföretagare",
         searchPhrase: "serviceföretagare a-kassa",
         recommendedAkassaId: "sha",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "serveringspersonal",
         name: "Serveringspersonal",
         searchPhrase: "serveringspersonal a-kassa",
         recommendedAkassaId: "hrak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "sjukskoterska",
@@ -1380,12 +1498,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/professions/sjukskoterska.png",
     },
 
+
     {
         slug: "skogskonsulent",
         name: "Skogskonsulent",
         searchPhrase: "skogskonsulent a-kassa",
         recommendedAkassaId: "slak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "skogsmaskinforare",
@@ -1395,6 +1516,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "slaktare",
         name: "Slaktare",
@@ -1402,6 +1524,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "livs",
         image: "/assets/images/categories/industry.png",
     },
+
 
     {
         slug: "snickare",
@@ -1411,6 +1534,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/professions/snickare.png",
     },
 
+
     {
         slug: "socialsekreterare",
         name: "Socialsekreterare",
@@ -1418,6 +1542,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "vision",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "studie-och-yrkesvagledare",
@@ -1427,6 +1552,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "svetsare",
         name: "Svetsare",
@@ -1434,6 +1560,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "ifmetall",
         image: "/assets/images/categories/industry.png",
     },
+
 
     {
         slug: "sagverksarbetare",
@@ -1443,6 +1570,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "saljare",
         name: "Säljare",
@@ -1450,6 +1578,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "saljarnas",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "saljare-tjansteman",
@@ -1459,6 +1588,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "taxichauffor",
         name: "Taxichaufför",
@@ -1466,6 +1596,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "transport",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "taxiforetagare",
@@ -1475,6 +1606,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "teamledare",
         name: "Teamledare",
@@ -1482,6 +1614,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "ledarna",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "terminalarbetare",
@@ -1491,12 +1624,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "tjansteman",
         name: "Tjänsteman",
         searchPhrase: "tjänsteman a-kassa",
         recommendedAkassaId: "saak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "tryckare",
@@ -1506,6 +1642,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "tryckpappersarbetare",
         name: "Tryckpappersarbetare",
@@ -1513,6 +1650,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "pappers",
         image: "/assets/images/categories/industry.png",
     },
+
 
     {
         slug: "trahusmontor",
@@ -1522,6 +1660,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "underskoterska",
         name: "Undersköterska",
@@ -1529,6 +1668,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "kommunal",
         image: "/assets/images/professions/underskoterska.png",
     },
+
 
     {
         slug: "vd",
@@ -1538,6 +1678,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "verktygsmakare",
         name: "Verktygsmakare",
@@ -1546,19 +1687,24 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "virkeskopare",
         name: "Virkesköpare",
         searchPhrase: "virkesköpare a-kassa",
         recommendedAkassaId: "slak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "vvs-arbetare",
         name: "VVS-arbetare",
         searchPhrase: "vvs-arbetare a-kassa",
         recommendedAkassaId: "fastighets",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "vvs-montor",
@@ -1568,6 +1714,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "aldreomsorgspersonal",
         name: "Äldreomsorgspersonal",
@@ -1576,12 +1723,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/healthcare.png",
     },
 
+
     {
         slug: "oversattare",
         name: "Översättare",
         searchPhrase: "översättare a-kassa",
         recommendedAkassaId: "journalist",
+        image: "/assets/images/categories/office.png",
     },
+
 
 
     {
@@ -1592,6 +1742,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "webbutvecklare",
         name: "Webbutvecklare",
@@ -1599,6 +1750,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "aea",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "hr-specialist",
@@ -1608,6 +1760,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "hr-chef",
         name: "HR-chef",
@@ -1615,6 +1768,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "aea",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "personalvetare",
@@ -1624,6 +1778,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "receptionist-kontor",
         name: "Receptionist (kontor)",
@@ -1631,6 +1786,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "unionen",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "kontorist",
@@ -1640,6 +1796,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "brevsorterare",
         name: "Brevsorterare",
@@ -1647,6 +1804,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "seko",
         image: "/assets/images/categories/transport.png",
     },
+
 
     {
         slug: "tandhygienist",
@@ -1656,6 +1814,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/healthcare.png",
     },
 
+
     {
         slug: "tandskoterska",
         name: "Tandsköterska",
@@ -1663,6 +1822,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "vision",
         image: "/assets/images/categories/healthcare.png",
     },
+
 
     {
         slug: "tandlakare",
@@ -1672,6 +1832,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/healthcare.png",
     },
 
+
     {
         slug: "vardcentraladministrator",
         name: "Vårdcentraladministratör",
@@ -1679,6 +1840,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "vision",
         image: "/assets/images/categories/healthcare.png",
     },
+
 
     {
         slug: "apotekstekniker",
@@ -1688,6 +1850,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "apotekare",
         name: "Apotekare",
@@ -1695,6 +1858,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "aea",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "butiksledare",
@@ -1704,6 +1868,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "e-handelslogistiker",
         name: "E-handelslogistiker",
@@ -1711,6 +1876,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "handels",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "chauffor-latt-lastbil",
@@ -1720,12 +1886,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "behorig-elektriker-service",
         name: "Behörig elektriker-service",
         searchPhrase: "behörig elektriker-service a-kassa",
         recommendedAkassaId: "eak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "vaktare",
@@ -1735,6 +1904,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/transport.png",
     },
 
+
     {
         slug: "kundtjanstmedarbetare",
         name: "Kundtjänstmedarbetare",
@@ -1742,6 +1912,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "unionen",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "telefonsaljare",
@@ -1751,6 +1922,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "hr-administrator",
         name: "HR-administratör",
@@ -1758,6 +1930,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "unionen",
         image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "arbetsledare-industri",
@@ -1767,6 +1940,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "maskinforare-bygg-anlaggning",
         name: "Maskinförare (bygg/anläggning)",
@@ -1774,6 +1948,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "byggnads",
         image: "/assets/images/categories/construction.png",
     },
+
 
     {
         slug: "tradgardsarbetare",
@@ -1783,12 +1958,15 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/healthcare.png",
     },
 
+
     {
         slug: "kallskanka",
         name: "Kallskänka",
         searchPhrase: "kallskänka a-kassa",
         recommendedAkassaId: "hrak",
+        image: "/assets/images/categories/office.png",
     },
+
 
     {
         slug: "servicetekniker-maskiner",
@@ -1798,6 +1976,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/office.png",
     },
 
+
     {
         slug: "produktionstekniker",
         name: "Produktionstekniker",
@@ -1806,6 +1985,7 @@ export const yrken: Yrke[] = [
         image: "/assets/images/categories/industry.png",
     },
 
+
     {
         slug: "brandman",
         name: "Brandman",
@@ -1813,6 +1993,7 @@ export const yrken: Yrke[] = [
         recommendedAkassaId: "kommunal",
         image: "/assets/images/categories/healthcare.png",
     },
+
 
     {
         slug: "larmoperator-112",
