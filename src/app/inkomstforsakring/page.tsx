@@ -155,6 +155,171 @@ export default function InkomstforsakringPage() {
                 </div>
             </section>
 
+            {/* 3.5 COMPARISON BLOCK */}
+            <section className="py-16 bg-white border-b border-gray-100">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                        Exempel på inkomstförsäkringar
+                    </h2>
+                    <div className="flex flex-col gap-4">
+                        {/* JobbGarant */}
+                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-md transition-shadow">
+                            <div className="w-full lg:w-48 flex justify-center lg:justify-start">
+                                <span className="text-xl font-bold text-orange-500">JobbGarant™</span>
+                            </div>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center lg:text-left">
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max månadslön</p>
+                                    <p className="font-bold text-gray-900 text-lg">100 000 kr</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättning</p>
+                                    <p className="font-bold text-gray-900 text-lg">80 % <span className="text-sm font-normal text-gray-500">av lönen</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättningstid</p>
+                                    <p className="font-bold text-gray-900 text-lg">264 <span className="text-sm font-normal text-gray-500">dagar</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Månadskostnad</p>
+                                    <p className="font-bold text-gray-900 text-lg">82-995 <span className="text-sm font-normal text-gray-500">kr</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Akademikerförbundet SSR (Link to AEA) */}
+                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-md transition-shadow relative overflow-hidden group">
+                            <Link href="/akassa/aea" className="absolute inset-0 z-10"><span className="sr-only">Läs mer om Akademikernas a-kassa</span></Link>
+                            <div className="w-full lg:w-48 flex justify-center lg:justify-start">
+                                <span className="text-lg font-bold text-gray-900">Akademikerförbundet SSR</span>
+                            </div>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center lg:text-left">
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max månadslön</p>
+                                    <p className="font-bold text-gray-900 text-lg">100 000 kr</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättning</p>
+                                    <p className="font-bold text-gray-900 text-lg">80 % <span className="text-sm font-normal text-gray-500">av lönen</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättningstid</p>
+                                    <p className="font-bold text-gray-900 text-lg">140 <span className="text-sm font-normal text-gray-500">dagar</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Månadskostnad</p>
+                                    <p className="font-bold text-gray-900 text-lg">146-260 <span className="text-sm font-normal text-gray-500">kr</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Sveriges Ingenjörer (Link to AEA) */}
+                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-md transition-shadow relative overflow-hidden group">
+                            <Link href="/akassa/aea" className="absolute inset-0 z-10"><span className="sr-only">Läs mer om Akademikernas a-kassa</span></Link>
+                            <div className="w-full lg:w-48 flex justify-center lg:justify-start">
+                                <span className="text-lg font-bold text-gray-900">Sveriges Ingenjörer</span>
+                            </div>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center lg:text-left">
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max månadslön</p>
+                                    <p className="font-bold text-gray-900 text-lg">100 000 kr</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättning</p>
+                                    <p className="font-bold text-gray-900 text-lg">80 % <span className="text-sm font-normal text-gray-500">av lönen</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättningstid</p>
+                                    <p className="font-bold text-gray-900 text-lg">150 <span className="text-sm font-normal text-gray-500">dagar</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Månadskostnad</p>
+                                    <p className="font-bold text-gray-900 text-lg">65-265 <span className="text-sm font-normal text-gray-500">kr</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Kommunal */}
+                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-md transition-shadow relative overflow-hidden group">
+                            <Link href="/akassa/kommunal" className="absolute inset-0 z-10"><span className="sr-only">Läs mer om Kommunals a-kassa</span></Link>
+                            <div className="w-full lg:w-48 flex justify-center lg:justify-start relative h-10">
+                                <Image src="/logos/kommunal.png" alt="Kommunal" fill className="object-contain object-left" />
+                            </div>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center lg:text-left">
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max månadslön</p>
+                                    <p className="font-bold text-gray-900 text-lg">45 000 kr</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättning</p>
+                                    <p className="font-bold text-gray-900 text-lg">80 % <span className="text-sm font-normal text-gray-500">av lönen</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättningstid</p>
+                                    <p className="font-bold text-gray-900 text-lg">150 <span className="text-sm font-normal text-gray-500">dagar</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Månadskostnad</p>
+                                    <p className="font-bold text-gray-900 text-lg">138-495 <span className="text-sm font-normal text-gray-500">kr</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Vision */}
+                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-md transition-shadow relative overflow-hidden group">
+                            <Link href="/akassa/vision" className="absolute inset-0 z-10"><span className="sr-only">Läs mer om Vision a-kassa</span></Link>
+                            <div className="w-full lg:w-48 flex justify-center lg:justify-start relative h-10">
+                                <Image src="/logos/vision.png" alt="Vision" fill className="object-contain object-left" />
+                            </div>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center lg:text-left">
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max månadslön</p>
+                                    <p className="font-bold text-gray-900 text-lg">100 000 kr</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättning</p>
+                                    <p className="font-bold text-gray-900 text-lg">80 % <span className="text-sm font-normal text-gray-500">av lönen</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättningstid</p>
+                                    <p className="font-bold text-gray-900 text-lg">160 <span className="text-sm font-normal text-gray-500">dagar</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Månadskostnad</p>
+                                    <p className="font-bold text-gray-900 text-lg">47–260 <span className="text-sm font-normal text-gray-500">kr</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Unionen */}
+                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-md transition-shadow relative overflow-hidden group">
+                            <Link href="/akassa/unionen" className="absolute inset-0 z-10"><span className="sr-only">Läs mer om Unionens a-kassa</span></Link>
+                            <div className="w-full lg:w-48 flex justify-center lg:justify-start relative h-10">
+                                <Image src="/logos/unionen.png" alt="Unionen" fill className="object-contain object-left" />
+                            </div>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center lg:text-left">
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max månadslön</p>
+                                    <p className="font-bold text-gray-900 text-lg">60 000 kr</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättning</p>
+                                    <p className="font-bold text-gray-900 text-lg">80 % <span className="text-sm font-normal text-gray-500">av lönen</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Max ersättningstid</p>
+                                    <p className="font-bold text-gray-900 text-lg">150 <span className="text-sm font-normal text-gray-500">dagar</span></p>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide">Månadskostnad</p>
+                                    <p className="font-bold text-gray-900 text-lg">50–235 <span className="text-sm font-normal text-gray-500">kr</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* 4. REQUIREMENTS & COMPARE */}
             <section className="py-16 px-4 max-w-7xl mx-auto sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
                 <div className="relative h-96 lg:h-auto min-h-[400px] w-full bg-gray-100 rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
