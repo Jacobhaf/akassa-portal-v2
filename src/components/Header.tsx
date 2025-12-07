@@ -97,62 +97,47 @@ export default function Header() {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
                     <div className="absolute bottom-0 left-0 w-64 h-64 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
 
-                    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] space-y-8 px-6 py-12">
-                        <Link
-                            href="/"
-                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Hem
-                        </Link>
-                        <Link
-                            href="/#jamfor"
-                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            A-kassor
-                        </Link>
-                        <Link
-                            href="/jamfor"
-                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Jämför a-kassor
-                        </Link>
-                        <Link
-                            href="/yrken"
-                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Yrken
-                        </Link>
-                        <Link
-                            href="/inkomstforsakring"
-                            className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-green-200 hover:from-white hover:to-white transition-all"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Inkomstförsäkring
-                        </Link>
-                        <Link
-                            href="/artiklar"
-                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Artiklar
-                        </Link>
+                    <div className="relative flex flex-col min-h-[calc(100vh-80px)] px-6 py-8 space-y-8">
 
-                        <div className="pt-8 w-full max-w-xs">
-                            <Link
-                                href="/jamfor"
-                                className="block w-full text-center rounded-full bg-blue-600 px-8 py-4 text-lg font-bold text-white shadow-xl hover:bg-blue-500 hover:shadow-2xl hover:-translate-y-1 transition-all"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Jämför a-kassor nu
-                            </Link>
+                        {/* Twitter / Social */}
+                        <div className="flex items-center">
+                            <a href="#" className="h-10 w-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors">
+                                <span className="sr-only">Twitter</span>
+                                <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                            </a>
+                        </div>
+
+                        {/* Utforska Group */}
+                        <div className="space-y-4">
+                            <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">Utforska</h3>
+                            <div className="flex flex-col space-y-4">
+                                <Link href="/jamfor" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Alla a-kassor</Link>
+                                <Link href="/yrken" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Hitta via yrke</Link>
+                                <Link href="/inkomstforsakring" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Inkomstförsäkring</Link>
+                                <Link href="/artiklar" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Artiklar & Guider</Link>
+                            </div>
+                        </div>
+
+                        {/* Om tjänsten Group */}
+                        <div className="space-y-4">
+                            <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">Om tjänsten</h3>
+                            <div className="flex flex-col space-y-4">
+                                <Link href="/om-oss" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Om oss</Link>
+                                <Link href="/integritetspolicy" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Integritetspolicy</Link>
+                                <Link href="/cookies" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Cookies</Link>
+                            </div>
+                        </div>
+
+                        {/* Kontakta oss Group */}
+                        <div className="space-y-4">
+                            <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">Kontakta oss</h3>
+                            <div className="flex flex-col space-y-4">
+                                <Link href="/kontakt" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Kontakt</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             )}
-        </header>
+        </header >
     );
 }
