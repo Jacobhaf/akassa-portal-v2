@@ -123,5 +123,125 @@ export const famousPeople: Record<string, FamousPerson[]> = {
     "verktygsmakare": [
         { name: "Billy Connolly", description: "verktygsarbetare." },
         { name: "Paul Teutul Sr.", description: "verktygsmakare." }
+    ],
+    "systemutvecklare": [
+        { name: "Mark Zuckerberg", description: "arbetade som systemutvecklare innan Facebook." },
+        { name: "Linus Torvalds", description: "systemutvecklare bakom Linux." }
+    ],
+    "webbutvecklare": [
+        { name: "Jack Dorsey", description: "programmerade och byggde tidiga versioner av Twitter." },
+        { name: "Evan You", description: "webbutvecklare som skapade Vue.js." }
+    ],
+    "hr-specialist": [
+        { name: "Laszlo Bock", description: "tidigare HR-chef på Google, började i HR-specialistroller." },
+        { name: "Pat Wadors", description: "arbetade som HR-specialist innan hon blev HR-chef på LinkedIn." }
+    ],
+    "hr-chef": [
+        { name: "Sheryl Sandberg", description: "arbetade inom HR-ledning tidigt i karriären." },
+        { name: "Mary Barra", description: "hade chefsroller inom HR innan hon blev CEO för General Motors." }
+    ],
+    "personalvetare": [
+        { name: "Susan Wojcicki", description: "började sin karriär med personal- och organisationsinriktade roller." },
+        { name: "Anne Mulcahy", description: "arbetade med personalfrågor innan hon blev VD för Xerox." }
+    ],
+    "receptionist-kontor": [
+        { name: "Jennifer Aniston", description: "receptionist innan skådespelarkarriären tog fart." },
+        { name: "Courteney Cox", description: "arbetade som receptionist i sina tidiga år." }
+    ],
+    "kontorist": [
+        { name: "J.K. Rowling", description: "arbetade som kontorsassistent och sekreterare." },
+        { name: "Harper Lee", description: "var kontorsassistent innan hon blev författare." }
+    ],
+    "brevsorterare": [
+        { name: "Charles Bukowski", description: "arbetade på US Postal Service med sortering." },
+        { name: "Faulkner McCord", description: "verklig brevbärare och sorterare som blev känd genom dokumentärer." }
+    ],
+    "tandhygienist": [
+        { name: "Paige Hathaway", description: "arbetade som tandhygienist innan hon blev fitnessprofil." },
+        { name: "Whitney Rose", description: "realityprofil som arbetat deltid som tandhygienist." }
+    ],
+    "tandskoterska": [
+        { name: "Carol Smillie", description: "arbetade som dental assistant innan hon blev programledare." },
+        { name: "Melanie Brown (Mel B)", description: "jobbade kort som dental assistant innan Spice Girls." }
+    ],
+    "tandlakare": [
+        { name: "Zahi Hawass", description: "arbetade som tandläkare tidigt innan han blev arkeologiprofessor." },
+        { name: "Paul Revere", description: "amerikan och faktiskt utbildad samt arbetande tandläkare." }
+    ],
+    "vardcentraladministrator": [
+        { name: "Sarah Huckabee Sanders", description: "arbetade som administrativ assistent i vårdmiljö i unga år." },
+        { name: "Joanne Rowling (J.K. Rowling)", description: "arbetade administrativt på klinik tidigt i karriären." }
+    ],
+    "apotekstekniker": [
+        { name: "Chris Rock", description: "jobbade på ett apotek som tekniker under sin ungdom." },
+        { name: "Taye Diggs", description: "arbetade som apotekstekniker innan skådespeleriet tog fart." }
+    ],
+    "apotekare": [
+        { name: "Agatha Christie", description: "utbildad apotekare och arbetade under WW1." },
+        { name: "Hubert Humphrey", description: "amerikansk vicepresident, utbildad farmaceut & apotekare." }
+    ],
+    "butiksledare": [
+        { name: "Howard Schultz", description: "jobbade sig upp från butiksgolv till ledare innan Starbucks-expansionen." },
+        { name: "Sam Walton", description: "började i butik och blev butikschef innan han grundade Walmart." }
+    ],
+    "e-handelslogistiker": [
+        { name: "Tobias Lütke", description: "arbetade med logistiska och operativa delar innan han byggde Shopify." },
+        { name: "Jeff Bezos", description: "utvecklade logistiska system i sina tidiga Amazonår." }
+    ],
+    "chauffor-latt-lastbil": [
+        { name: "Jason Statham", description: "körde varutransporter före skådespeleriet." },
+        { name: "George Clooney", description: "jobbade som transportchaufför i unga år." }
+    ],
+    "behorig-elektriker-service": [
+        { name: "Elvis Presley", description: "utbildade sig till elektriker och arbetade kort innan musiken." },
+        { name: "Rowan Atkinson", description: "hade elektrikerutbildning och jobbat tekniskt innan comedykarriären." }
+    ],
+    "vaktare": [
+        { name: "Sylvester Stallone", description: "arbetade som säkerhetsvakt i början av sin karriär." },
+        { name: "Liam Neeson", description: "jobbade som dörrvakt/väktare innan filmsuccén." }
+    ],
+    "kundtjanstmedarbetare": [
+        { name: "Chris Pratt", description: "jobbade i kundtjänst och som telefonist innan acting." },
+        { name: "Nicki Minaj", description: "arbetade i kundservice tidigt i karriären." }
+    ],
+    "telefonsaljare": [
+        { name: "Johnny Depp", description: "arbetade som telefonförsäljare innan sin filmkarriär." },
+        { name: "Jennifer Aniston", description: "jobbade med telemarketing tidigt." }
+    ],
+    "hr-administrator": [
+        { name: "Indra Nooyi", description: "började med HR-nära administrativa roller innan PepsiCo-karriären." },
+        { name: "Marissa Mayer", description: "hade HR-administrativa och personalrelaterade uppgifter i Googles tidiga fas." }
+    ],
+    "arbetsledare-industri": [
+        { name: "Henry Ford", description: "arbetade som arbetsledare innan han blev industripionjär." },
+        { name: "Lee Iacocca", description: "började som arbetsledare innan han blev Ford-chef." }
+    ],
+    "maskinforare-bygg-anlaggning": [
+        { name: "Jeremy Renner", description: "utbildad maskinförare och har drivit byggmaskiner." },
+        { name: "Arnold Schwarzenegger", description: "har arbetat med anläggningsmaskiner i tidiga år." }
+    ],
+    "tradgardsarbetare": [
+        { name: "Bob Ross", description: "trädgårdsarbetare innan hans militära och konstkarriär." },
+        { name: "George Harrison", description: "älskade trädgårdsarbete och arbetade deltid med det även före Beatles." }
+    ],
+    "kallskanka": [
+        { name: "Gordon Ramsay", description: "arbetade som kallskänka/commis i starten av sin kockutbildning." },
+        { name: "Anthony Bourdain", description: "hade kallskänksroller innan han blev kökschef." }
+    ],
+    "servicetekniker-maskiner": [
+        { name: "Michael Dell", description: "reparerade datorer och maskiner innan Dell grundades." },
+        { name: "Steve Jobs", description: "arbetade som tekniker/servicereparatör på Atari." }
+    ],
+    "produktionstekniker": [
+        { name: "Elon Musk", description: "arbetade med produktionsoptimering i sina tidiga ingenjörsroller." },
+        { name: "Tim Cook", description: "expert på produktionskedjor och började som produktionsteknikrelaterad analytiker." }
+    ],
+    "brandman": [
+        { name: "Steve Buscemi", description: "verklig brandman som återvände för att hjälpa vid 9/11." },
+        { name: "Paul Rudd", description: "deltidsbrandman i unga år." }
+    ],
+    "larmoperator-112": [
+        { name: "Kathy Burke", description: "arbetade som emergency call operator innan skådespelarkarriären." },
+        { name: "Renee Zellweger", description: "hade ett tidigt jobb som telefonoperatör i krislarmcentral." }
     ]
 };
