@@ -49,5 +49,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }));
 
-    return [...routes, ...articleRoutes, ...professionRoutes, ...akassaRoutes];
+    // Dynamic routes for profession checklists
+    const checklistRoutes = yrken.map((yrke) => ({
+        url: `${baseUrl}/yrken/${yrke.slug}/checklista`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+    }));
+
+    return [...routes, ...articleRoutes, ...professionRoutes, ...checklistRoutes, ...akassaRoutes];
 }
