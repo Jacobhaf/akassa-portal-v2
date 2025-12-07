@@ -14,10 +14,10 @@ export default function Header() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0B1B3F] backdrop-blur-md">
-            <div className="mx-auto flex h-48 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto flex h-20 md:h-32 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative z-50 bg-[#0B1B3F]">
                 <div className="flex items-center">
-                    <Link href="/" className="flex items-center group">
-                        <div className="relative h-40 w-[36rem] transition-transform group-hover:scale-105">
+                    <Link href="/" className="flex items-center group" onClick={() => setIsMenuOpen(false)}>
+                        <div className="relative h-12 w-48 md:h-20 md:w-80 transition-transform group-hover:scale-105">
                             <Image
                                 src="/logo-valja-akassa-white.png"
                                 alt="Välja A-kassa Logo"
@@ -77,65 +77,72 @@ export default function Header() {
                 <div className="flex md:hidden">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white hover:bg-white/10 transition-colors"
                         onClick={toggleMenu}
                     >
                         <span className="sr-only">Öppna huvudmenyn</span>
                         {isMenuOpen ? (
-                            <X className="h-6 w-6" aria-hidden="true" />
+                            <X className="h-8 w-8" aria-hidden="true" />
                         ) : (
-                            <Menu className="h-6 w-6" aria-hidden="true" />
+                            <Menu className="h-8 w-8" aria-hidden="true" />
                         )}
                     </button>
                 </div>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Premium Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="md:hidden">
-                    <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 bg-white border-b border-gray-200 shadow-lg">
+                <div className="fixed inset-0 top-[80px] z-40 bg-[#0B1B3F] md:hidden overflow-y-auto">
+                    {/* Background Elements */}
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+
+                    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] space-y-8 px-6 py-12">
                         <Link
                             href="/"
-                            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Hem
                         </Link>
                         <Link
                             href="/#jamfor"
-                            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             A-kassor
                         </Link>
                         <Link
                             href="/yrken"
-                            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Yrken
                         </Link>
                         <Link
                             href="/inkomstforsakring"
-                            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                            className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-green-200 hover:from-white hover:to-white transition-all"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Inkomstförsäkring
                         </Link>
                         <Link
                             href="/artiklar"
-                            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                            className="text-3xl font-bold text-white hover:text-blue-300 transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Artiklar
                         </Link>
-                        <Link
-                            href="/#jamfor"
-                            className="block w-full text-center mt-4 rounded-lg bg-blue-600 px-4 py-2 text-base font-semibold text-white shadow-sm hover:bg-blue-500"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Jämför a-kassor
-                        </Link>
+
+                        <div className="pt-8 w-full max-w-xs">
+                            <Link
+                                href="/#jamfor"
+                                className="block w-full text-center rounded-full bg-blue-600 px-8 py-4 text-lg font-bold text-white shadow-xl hover:bg-blue-500 hover:shadow-2xl hover:-translate-y-1 transition-all"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Jämför a-kassor nu
+                            </Link>
+                        </div>
                     </div>
                 </div>
             )}
