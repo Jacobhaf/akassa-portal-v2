@@ -4,20 +4,44 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils"; // Assuming utils exists, otherwise I'll mock className joining
+
+// Helper component for Nav Links
+function NavLink({ href, children, active }: { href: string; children: React.ReactNode; active: boolean }) {
+    return (
+        <Link
+            href={href}
+            className={cn(
+                "relative text-sm font-medium transition-colors hover:text-white",
+                active ? "text-white" : "text-blue-200/80"
+            )}
+        >
+            {children}
+            {active && (
+                <span className="absolute -bottom-2 left-0 right-0 h-0.5 bg-blue-400 shadow-[0_0_8px_rgba(96,165,250,0.8)] rounded-full" />
+            )}
+            <span className="absolute -bottom-2 left-0 right-0 h-0.5 bg-white/20 opacity-0 transition-opacity hover:opacity-100" />
+        </Link>
+    );
+}
 
 export default function Header() {
+    const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const isActive = (path: string) => pathname === path;
+
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0B1B3F] backdrop-blur-md">
-            <div className="mx-auto flex h-20 md:h-48 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative z-50 bg-[#0B1B3F]">
+        <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-[#0B1B3F]/90 backdrop-blur-xl">
+            <div className="mx-auto flex h-20 md:h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative z-50">
                 <div className="flex items-center">
                     <Link href="/" className="flex items-center group" onClick={() => setIsMenuOpen(false)}>
-                        <div className="relative h-20 w-80 md:h-40 md:w-[36rem] transition-transform group-hover:scale-105">
+                        <div className="relative h-12 w-48 transition-transform group-hover:scale-105">
                             <Image
                                 src="/logo-valja-akassa-white.png"
                                 alt="Välja A-kassa Logo"
@@ -30,43 +54,13 @@ export default function Header() {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center gap-8">
-                    <Link
-                        href="/"
-                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
-                    >
-                        Hem
-                    </Link>
-                    <Link
-                        href="/#jamfor"
-                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
-                    >
-                        A-kassor
-                    </Link>
-                    <Link
-                        href="/jamfor"
-                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
-                    >
-                        Jämför a-kassor
-                    </Link>
-                    <Link
-                        href="/yrken"
-                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
-                    >
-                        Yrken
-                    </Link>
-                    <Link
-                        href="/inkomstforsakring"
-                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
-                    >
-                        Inkomstförsäkring
-                    </Link>
-                    <Link
-                        href="/artiklar"
-                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
-                    >
-                        Artiklar
-                    </Link>
+                <nav className="hidden md:flex items-center gap-10">
+                    <NavLink href="/" active={isActive("/")}>Hem</NavLink>
+                    <NavLink href="/#jamfor" active={isActive("/#jamfor")}>A-kassor</NavLink>
+                    <NavLink href="/jamfor" active={isActive("/jamfor")}>Jämför a-kassor</NavLink>
+                    <NavLink href="/yrken" active={isActive("/yrken")}>Yrken</NavLink>
+                    <NavLink href="/inkomstforsakring" active={isActive("/inkomstforsakring")}>Inkomstförsäkring</NavLink>
+                    <NavLink href="/artiklar" active={isActive("/artiklar")}>Artiklar</NavLink>
                 </nav>
 
                 {/* Desktop CTA */}
