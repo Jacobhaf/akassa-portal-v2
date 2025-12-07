@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { akassor, yrken } from "@/data/database";
+import { akassor as logoData } from "@/data/akassor";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Props {
     params: {
@@ -52,9 +54,30 @@ export default function AkassaPage({ params }: Props) {
             <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm overflow-hidden">
                 {/* Header */}
                 <div className="bg-blue-600 px-8 py-10 text-white">
-                    <h1 className="text-3xl sm:text-4xl font-bold mb-4">
-                        {akassa.name} – avgift, villkor och vilka yrken som passar 2025
-                    </h1>
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-6">
+                        {(() => {
+                            const logoInfo = logoData.find((l) => l.slug === akassa.id);
+                            const logoUrl = logoInfo?.logo;
+
+                            if (logoUrl) {
+                                return (
+                                    <div className="relative w-24 h-24 bg-white rounded-xl shadow-lg flex-shrink-0 p-2">
+                                        <Image
+                                            src={logoUrl}
+                                            alt={`${akassa.name} logotyp`}
+                                            fill
+                                            className="object-contain p-2"
+                                            sizes="96px"
+                                        />
+                                    </div>
+                                );
+                            }
+                            return null;
+                        })()}
+                        <h1 className="text-3xl sm:text-4xl font-bold">
+                            {akassa.name} – avgift, villkor och vilka yrken som passar 2025
+                        </h1>
+                    </div>
                     <p className="text-blue-100 text-lg max-w-2xl">
                         {akassa.name} är en a-kassa för{" "}
                         {akassa.primaryIndustries.join(", ")}. Här går vi igenom
