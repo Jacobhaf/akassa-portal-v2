@@ -23,7 +23,7 @@ export default function AkassorGrid() {
                                     alt={`${akassa.name} logotyp`}
                                     fill
                                     className="object-contain"
-                                    unoptimized
+                                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 />
                             ) : (
                                 <div className="flex h-full w-full items-center justify-center text-gray-400">
