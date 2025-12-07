@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { yrken } from "@/data/database";
+import Search from "@/components/Search";
 
 export const metadata = {
     title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | A-kassa Portal",
@@ -46,6 +47,9 @@ export default function YrkenPage() {
                         <p className="mt-6 text-lg leading-8 text-blue-100">
                             Här hittar du alla yrken vi matchar mot a-kassa.
                         </p>
+                        <div className="mt-8 mx-auto lg:mx-0 max-w-md">
+                            <Search />
+                        </div>
                     </div>
                 </div>
             </div>
