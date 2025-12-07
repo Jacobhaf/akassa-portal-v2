@@ -16,7 +16,7 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="lg:col-span-1">
                         <Link href="/" className="flex items-center mb-8 inline-block">
-                            <div className="relative h-20 w-80 md:h-40 md:w-[36rem] transition-opacity hover:opacity-90">
+                            <div className="relative h-12 w-48 md:h-16 md:w-64 transition-opacity hover:opacity-90">
                                 <Image
                                     src="/logo-valja-akassa-white.png"
                                     alt="Välja A-kassa Logo"
