@@ -1,6 +1,7 @@
 import { articles } from "@/data/articles";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 interface Props {
@@ -53,6 +54,15 @@ export default function ArticlePage({ params }: Props) {
                     <Link href="/artiklar" className="text-blue-600 hover:text-blue-500 text-sm font-semibold">
                         &larr; Tillbaka till artiklar
                     </Link>
+                </div>
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-10 shadow-lg">
+                    <Image
+                        src={article.image}
+                        alt={article.title}
+                        fill
+                        className="object-cover"
+                        priority
+                    />
                 </div>
                 <p className="text-base font-semibold leading-7 text-blue-600">Guide</p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
