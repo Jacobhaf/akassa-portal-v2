@@ -38,10 +38,10 @@ export default function Header() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-[#0B1B3F]/90 backdrop-blur-xl">
-            <div className="mx-auto flex h-20 md:h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative z-50">
+            <div className="mx-auto flex h-20 md:h-32 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative z-50">
                 <div className="flex items-center">
                     <Link href="/" className="flex items-center group" onClick={() => setIsMenuOpen(false)}>
-                        <div className="relative h-12 w-48 transition-transform group-hover:scale-105">
+                        <div className="relative h-16 w-64 md:h-24 md:w-96 transition-transform group-hover:scale-105">
                             <Image
                                 src="/logo-valja-akassa-white.png"
                                 alt="Välja A-kassa Logo"
