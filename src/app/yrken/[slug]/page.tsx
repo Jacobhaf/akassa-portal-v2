@@ -1,6 +1,8 @@
+
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { yrken, akassor } from "@/data/database";
+import { famousPeople } from "@/data/famousPeople";
 import Link from "next/link";
 
 interface Props {
@@ -19,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
-        description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
+        title: `${yrke.name} a - kassa – Bästa val 2025 | A - kassa Portal`,
+        description: `Jobbar du som ${yrke.name}? Här ser du vilken a - kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
         openGraph: {
-            title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
-            description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
+            title: `${yrke.name} a - kassa – Bästa val 2025 | A - kassa Portal`,
+            description: `Jobbar du som ${yrke.name}? Här ser du vilken a - kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
             url: `https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/yrken/${yrke.slug}`,
             images: [
                 {
@@ -159,6 +161,19 @@ export default function YrkePage({ params }: Props) {
                             ansökan på deras hemsida. Det tar bara några minuter och ger dig
                             en stor trygghet i arbetslivet.
                         </p>
+
+                        {famousPeople[yrke.slug] && (
+                            <>
+                                <h3>Kända personer som arbetat som {yrke.name}</h3>
+                                <ul>
+                                    {famousPeople[yrke.slug].map((person, index) => (
+                                        <li key={index}>
+                                            <strong>{person.name}</strong> – {person.description}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </>
+                        )}
                     </section>
 
                     {/* Related Resources */}
