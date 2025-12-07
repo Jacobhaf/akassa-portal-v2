@@ -53,6 +53,11 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/inkomstforsakring" className="text-base text-gray-300 hover:text-white transition-colors">
+                                    Inkomstförsäkring
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/artiklar" className="text-base text-gray-300 hover:text-white transition-colors">
                                     Artiklar
                                 </Link>

@@ -50,6 +50,12 @@ export default function Header() {
                         Yrken
                     </Link>
                     <Link
+                        href="/inkomstforsakring"
+                        className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
+                    >
+                        Inkomstförsäkring
+                    </Link>
+                    <Link
                         href="/artiklar"
                         className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
                     >
@@ -108,6 +114,13 @@ export default function Header() {
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Yrken
+                        </Link>
+                        <Link
+                            href="/inkomstforsakring"
+                            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Inkomstförsäkring
                         </Link>
                         <Link
                             href="/artiklar"
