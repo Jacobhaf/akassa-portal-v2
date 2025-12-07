@@ -84,19 +84,22 @@ export default function InkomstforsakringPage() {
                                 <div className="space-y-1 font-mono text-sm text-gray-700">
                                     <div className="flex justify-between">
                                         <span>Lön:</span>
-                                        <span>36 000 kr/mån</span>
+                                        <span>50 000 kr/mån</span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span>A-kassa:</span>
-                                        <span>≈ 26 000 kr/mån</span>
+                                        <span>≈ 27 200 kr/mån</span>
                                     </div>
                                     <div className="flex justify-between text-green-600 font-bold bg-green-50 px-2 py-1 -mx-2 rounded">
                                         <span>Inkomstförsäkring:</span>
-                                        <span>+ några tusenlappar</span>
+                                        <span>+ 12 800 kr</span>
                                     </div>
                                     <div className="flex justify-between font-bold pt-2 border-t border-gray-200 mt-1">
                                         <span>Total:</span>
-                                        <span>≈ 80% av 36 000 kr</span>
+                                        <span>≈ 80% av 50 000 kr</span>
+                                    </div>
+                                    <div className="text-xs text-gray-500 text-right mt-1">
+                                        Dvs 40 000 kr med inkomstförsäkring.
                                     </div>
                                 </div>
                             </div>
