@@ -50,6 +50,9 @@ export default function Home() {
                         <p className="mt-6 text-lg leading-8 text-blue-100">
                             Vi hjälper dig att jämföra och välja rätt arbetslöshetskassa baserat på ditt yrke och din situation.
                         </p>
+                        <div className="mt-8 mb-8 w-full max-w-md">
+                            <Search />
+                        </div>
                         <div className="mt-10 flex items-center gap-x-6">
                             <Link
                                 href="#jamfor"
