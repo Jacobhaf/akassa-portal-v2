@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils"; // Assuming utils exists, otherwise I'll mock className joining
 
@@ -92,51 +92,97 @@ export default function Header() {
 
             {/* Premium Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="fixed inset-0 top-[80px] z-40 bg-[#0B1B3F] md:hidden overflow-y-auto">
-                    {/* Background Elements */}
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+                <>
+                    {/* Backdrop */}
+                    <div
+                        className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden"
+                        onClick={() => setIsMenuOpen(false)}
+                    />
 
-                    <div className="relative flex flex-col min-h-[calc(100vh-80px)] px-6 py-8 space-y-8">
+                    {/* Drawer */}
+                    <div className="fixed inset-y-0 right-0 z-50 w-full bg-[#fcfcfc] px-6 py-6 shadow-2xl md:hidden md:max-w-sm sm:max-w-sm overflow-y-auto">
+                        <div className="flex items-center justify-between mb-8">
+                            <div className="relative h-10 w-32">
+                                <Image
+                                    src="/logo-valja-akassa-white.png"
+                                    alt="Välja A-kassa Logo"
+                                    fill
+                                    className="object-contain object-left invert brightness-0"
+                                />
+                            </div>
+                            <button
+                                type="button"
+                                className="-m-2.5 rounded-md p-2.5 text-gray-900 hover:bg-gray-100 transition-colors"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                <span className="sr-only">Stäng meny</span>
+                                <X className="h-6 w-6" aria-hidden="true" />
+                            </button>
+                        </div>
 
-                        {/* Twitter / Social */}
-                        <div className="flex items-center">
-                            <a href="#" className="h-10 w-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors">
+                        <div className="flex flex-col space-y-2">
+                            {/* Main Navigation Items */}
+                            <Link href="/" onClick={() => setIsMenuOpen(false)} className="group py-4 border-b border-gray-100">
+                                <div className="flex items-center gap-3 mb-1">
+                                    <ArrowRight className="h-4 w-4 text-gray-900 transition-transform group-hover:translate-x-1" />
+                                    <span className="text-lg font-bold text-gray-900">Hemsida</span>
+                                </div>
+                                <p className="pl-7 text-sm text-gray-500 font-medium">Sveriges guide till a-kassor</p>
+                            </Link>
+
+                            <Link href="/jamfor" onClick={() => setIsMenuOpen(false)} className="group py-4 border-b border-gray-100">
+                                <div className="flex items-center gap-3 mb-1">
+                                    <ArrowRight className="h-4 w-4 text-gray-900 transition-transform group-hover:translate-x-1" />
+                                    <span className="text-lg font-bold text-gray-900">Alla a-kassor</span>
+                                </div>
+                                <p className="pl-7 text-sm text-gray-500 font-medium">Jämför villkor och priser</p>
+                            </Link>
+
+                            <Link href="/yrken" onClick={() => setIsMenuOpen(false)} className="group py-4 border-b border-gray-100">
+                                <div className="flex items-center gap-3 mb-1">
+                                    <ArrowRight className="h-4 w-4 text-gray-900 transition-transform group-hover:translate-x-1" />
+                                    <span className="text-lg font-bold text-gray-900">Hitta via yrke</span>
+                                </div>
+                                <p className="pl-7 text-sm text-gray-500 font-medium">Se a-kassor för ditt jobb</p>
+                            </Link>
+
+                            <Link href="/inkomstforsakring" onClick={() => setIsMenuOpen(false)} className="group py-4 border-b border-gray-100">
+                                <div className="flex items-center gap-3 mb-1">
+                                    <ArrowRight className="h-4 w-4 text-gray-900 transition-transform group-hover:translate-x-1" />
+                                    <span className="text-lg font-bold text-gray-900">Inkomstförsäkring</span>
+                                </div>
+                                <p className="pl-7 text-sm text-gray-500 font-medium">Extra trygghet vid arbetslöshet</p>
+                            </Link>
+
+                            <Link href="/artiklar" onClick={() => setIsMenuOpen(false)} className="group py-4 border-b border-gray-100">
+                                <div className="flex items-center gap-3 mb-1">
+                                    <ArrowRight className="h-4 w-4 text-gray-900 transition-transform group-hover:translate-x-1" />
+                                    <span className="text-lg font-bold text-gray-900">Artiklar & Guider</span>
+                                </div>
+                                <p className="pl-7 text-sm text-gray-500 font-medium">Kunskap och tips</p>
+                            </Link>
+                        </div>
+
+                        {/* Secondary Links */}
+                        <div className="mt-8 flex flex-col space-y-4 px-2">
+                            <Link href="/om-oss" className="text-base font-medium text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Om oss</Link>
+                            <Link href="/integritetspolicy" className="text-base font-medium text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Integritetspolicy</Link>
+                            <Link href="/cookies" className="text-base font-medium text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Cookies</Link>
+                            <Link href="/kontakt" className="text-base font-medium text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Kontakt</Link>
+                        </div>
+
+                        {/* Social */}
+                        <div className="mt-12 px-2 pb-8">
+                            <a href="#" className="inline-flex items-center text-gray-400 hover:text-gray-900 transition-colors">
                                 <span className="sr-only">Twitter</span>
-                                <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                                <svg fill="currentColor" viewBox="0 0 24 24" className="h-6 w-6"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
                             </a>
-                        </div>
-
-                        {/* Utforska Group */}
-                        <div className="space-y-4">
-                            <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">Utforska</h3>
-                            <div className="flex flex-col space-y-4">
-                                <Link href="/jamfor" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Alla a-kassor</Link>
-                                <Link href="/yrken" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Hitta via yrke</Link>
-                                <Link href="/inkomstforsakring" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Inkomstförsäkring</Link>
-                                <Link href="/artiklar" className="text-xl font-bold text-white hover:text-blue-300 transition-colors" onClick={() => setIsMenuOpen(false)}>Artiklar & Guider</Link>
-                            </div>
-                        </div>
-
-                        {/* Om tjänsten Group */}
-                        <div className="space-y-4">
-                            <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">Om tjänsten</h3>
-                            <div className="flex flex-col space-y-4">
-                                <Link href="/om-oss" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Om oss</Link>
-                                <Link href="/integritetspolicy" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Integritetspolicy</Link>
-                                <Link href="/cookies" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Cookies</Link>
-                            </div>
-                        </div>
-
-                        {/* Kontakta oss Group */}
-                        <div className="space-y-4">
-                            <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">Kontakta oss</h3>
-                            <div className="flex flex-col space-y-4">
-                                <Link href="/kontakt" className="text-base text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Kontakt</Link>
+                            <div className="mt-4 text-xs font-bold uppercase tracking-wider text-gray-400">
+                                Välj A-kassa
                             </div>
                         </div>
                     </div>
-                </div>
+                </>
             )}
         </header >
     );
