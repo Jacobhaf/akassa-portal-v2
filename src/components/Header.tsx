@@ -17,7 +17,7 @@ export default function Header() {
             <div className="mx-auto flex h-20 md:h-48 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative z-50 bg-[#0B1B3F]">
                 <div className="flex items-center">
                     <Link href="/" className="flex items-center group" onClick={() => setIsMenuOpen(false)}>
-                        <div className="relative h-12 w-48 md:h-40 md:w-[36rem] transition-transform group-hover:scale-105">
+                        <div className="relative h-20 w-80 md:h-40 md:w-[36rem] transition-transform group-hover:scale-105">
                             <Image
                                 src="/logo-valja-akassa-white.png"
                                 alt="Välja A-kassa Logo"
