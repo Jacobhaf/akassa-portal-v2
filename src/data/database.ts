@@ -742,12 +742,14 @@ export const yrken: Yrke[] = [
         name: "Ekonom",
         searchPhrase: "ekonom a-kassa",
         recommendedAkassaId: "unionen",
+        image: "/assets/images/professions/ekonom.png",
     },
     {
         slug: "elektriker",
         name: "Elektriker",
         searchPhrase: "elektriker a-kassa",
         recommendedAkassaId: "eak",
+        image: "/assets/images/professions/elektriker.png",
     },
     {
         slug: "enhetschef",
@@ -1084,6 +1086,7 @@ export const yrken: Yrke[] = [
         name: "Lärare",
         searchPhrase: "lärare a-kassa",
         recommendedAkassaId: "la",
+        image: "/assets/images/professions/larare.png",
     },
     {
         slug: "marknadsforare",
@@ -1204,6 +1207,7 @@ export const yrken: Yrke[] = [
         name: "Sjuksköterska",
         searchPhrase: "sjuksköterska a-kassa",
         recommendedAkassaId: "aea",
+        image: "/assets/images/professions/sjukskoterska.png",
     },
     {
         slug: "skogskonsulent",
@@ -1228,6 +1232,7 @@ export const yrken: Yrke[] = [
         name: "Snickare",
         searchPhrase: "snickare a-kassa",
         recommendedAkassaId: "byggnads",
+        image: "/assets/images/professions/snickare.png",
     },
     {
         slug: "socialsekreterare",
@@ -1318,6 +1323,7 @@ export const yrken: Yrke[] = [
         name: "Undersköterska",
         searchPhrase: "undersköterska a-kassa",
         recommendedAkassaId: "kommunal",
+        image: "/assets/images/professions/underskoterska.png",
     },
     {
         slug: "vd",

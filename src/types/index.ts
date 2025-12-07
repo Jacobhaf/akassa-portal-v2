@@ -16,4 +16,5 @@ export interface Yrke {
     name: string;
     searchPhrase: string;
     recommendedAkassaId: string;
+    image?: string;
 }
