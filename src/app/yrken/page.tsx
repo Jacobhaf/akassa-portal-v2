@@ -1,8 +1,8 @@
 
-import Link from "next/link";
 import Image from "next/image";
-import { yrken } from "@/data/database";
+import { yrken, akassor } from "@/data/database";
 import Search from "@/components/Search";
+import YrkeCard from "@/components/YrkeCard";
 
 export const metadata = {
     title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | A-kassa Portal",
@@ -55,19 +55,19 @@ export default function YrkenPage() {
             </div>
 
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {sortedYrken.map((yrke) => (
-                        <Link
-                            key={yrke.slug}
-                            href={`/yrken/${yrke.slug}`}
-                            className="group flex items-center justify-between rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:border-blue-200 hover:shadow-md"
-                        >
-                            <span className="font-medium text-gray-900 group-hover:text-blue-600">
-                                {yrke.name}
-                            </span>
-                            <span className="text-gray-400 group-hover:text-blue-600">→</span>
-                        </Link>
-                    ))}
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    {sortedYrken.map((yrke) => {
+                        const recommendedAkassa = akassor.find(
+                            (a) => a.id === yrke.recommendedAkassaId
+                        );
+                        return (
+                            <YrkeCard
+                                key={yrke.slug}
+                                yrke={yrke}
+                                akassa={recommendedAkassa}
+                            />
+                        );
+                    })}
                 </div>
             </div>
         </main>
