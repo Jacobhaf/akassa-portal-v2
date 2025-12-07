@@ -1,16 +1,24 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-gray-900 text-white">
+        <footer className="bg-[#0B1B3F] text-white">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Brand Column */}
                     <div>
-                        <Link href="/" className="text-xl font-bold block mb-4">
-                            Välj a-kassa
+                        <Link href="/" className="flex items-center mb-6">
+                            <div className="relative h-12 w-40">
+                                <Image
+                                    src="/logo-valja-akassa-white.png"
+                                    alt="Välja A-kassa Logo"
+                                    fill
+                                    className="object-contain object-left"
+                                />
+                            </div>
                         </Link>
                         <p className="text-gray-400 text-sm max-w-xs mb-6">
                             Vi hjälper dig att hitta rätt a-kassa baserat på ditt yrke. Jämför enkelt och tryggt.
