@@ -11,106 +11,209 @@ export const articles: Article[] = [
   {
     slug: "vad-ar-akassa",
     title: "Vad är a-kassa och hur fungerar den?",
-    summary: "En grundläggande guide om arbetslöshetsförsäkringen, vem som kan gå med och hur du får ersättning.",
-    image: "/artiklar/akassa-grundguide.jpg",
+    summary: "En heltäckande guide om det svenska trygghetssystemet. Lär dig skillnaden mellan grundförsäkring och inkomstbortfallsförsäkring, och hur du säkrar din ekonomiska framtid.",
+    image: "/artiklar/akassa-grundguide.png",
     publishedAt: "2023-11-15",
     content: `
-      <h2>Vad är en a-kassa?</h2>
-      <p>A-kassa står för arbetslöshetskassa. Det är en försäkring som ger dig ekonomisk trygghet om du skulle bli arbetslös. I Sverige är a-kassan statsstödd men drivs av olika föreningar, ofta kopplade till fackförbund.</p>
+      <p class="lead">Att bli medlem i en a-kassa är ett av de viktigaste stegen du kan ta för din ekonomiska trygghet. Men hur fungerar systemet egentligen, och vad är skillnaden på att bara "få pengar" och att ha en riktig inkomstförsäkring? Här går vi igenom allt du behöver veta.</p>
+
+      <h2>Två delar av försäkringen</h2>
+      <p>Den svenska arbetslöshetsförsäkringen består av två huvuddelar. Det är viktigt att förstå skillnaden, då det avgör hur mycket pengar du får om du blir av med jobbet.</p>
       
-      <h2>Vem kan gå med?</h2>
-      <p>De flesta a-kassor är öppna för specifika yrkesgrupper, men det finns också a-kassor som är öppna för alla, till exempel Alfa-kassan. För att bli medlem måste du oftast ha arbetat en viss tid i Sverige.</p>
-      
-      <h2>Hur får jag ersättning?</h2>
-      <p>För att få ersättning måste du uppfylla arbetsvillkoret och medlemsvillkoret. Det innebär oftast att du ska ha varit medlem i minst 12 månader och arbetat en viss mängd timmar under det senaste året.</p>
+      <h3>1. Grundförsäkringen</h3>
+      <p>Detta är en "bottenplatta" som gäller för alla som uppfyller arbetsvillkoret, oavsett om du är medlem i en a-kassa eller inte. Ersättningen är dock låg och baseras inte på din tidigare lön.</p>
+      <ul>
+        <li>Gäller från att du fyllt 20 år.</li>
+        <li>Ger en lägre ersättning per dag.</li>
+        <li>Utbetalas av Alfa-kassan.</li>
+      </ul>
+
+      <h3>2. Inkomstbortfallsförsäkringen (Medlemskap)</h3>
+      <p>Detta är den del du får tillgång till genom att <strong>aktivt gå med</strong> i en a-kassa. Här baseras ersättningen på din faktiska lön, vilket gör att du kan behålla en betydligt större del av din levnadsstandard.</p>
+      <ul>
+        <li>Kräver medlemskap i minst 12 månader.</li>
+        <li>Kan ge upp till 80% av din lön (upp till taket).</li>
+        <li>En förutsättning för många privata inkomstförsäkringar.</li>
+      </ul>
+
+      <h2>Vem kan gå med i en a-kassa?</h2>
+      <p>I princip alla som arbetar i Sverige kan gå med i en a-kassa. Huvudregeln är att du ska tillhöra a-kassans verksamhetsområde. Det finns:</p>
+      <ol>
+        <li><strong>Yrkes- eller branschspecifika a-kassor:</strong> T.ex. för lärare, byggnadsarbetare, eller elektriker. Dessa har ofta bäst koll på just din arbetsmarknad.</li>
+        <li><strong>Tjänstemanna-a-kassor:</strong> T.ex. Unionens a-kassa eller Akademikernas a-kassa, som täcker breda grupper av tjänstemän och akademiker.</li>
+        <li><strong>Företagar-a-kassor:</strong> Specialiserade på egenföretagare.</li>
+        <li><strong>Alfa-kassan:</strong> Öppen för alla yrkesgrupper, men är inte kopplad till något fackförbund.</li>
+      </ol>
+
+      <h2>Så här ansöker du om ersättning</h2>
+      <p>Om olyckan är framme och du blir uppsagd, följ dessa steg för att inte missa någon ersättning:</p>
+      <ol>
+        <li><strong>Dag 1:</strong> Skriv in dig som arbetssökande på Arbetsförmedlingen. Detta är absolut kritiskt – gör du det inte första dagen får du ingen ersättning för den dagen.</li>
+        <li><strong>Ansök hos din a-kassa:</strong> Logga in på din a-kassas "Mina Sidor" och fyll i ansökan om ersättning.</li>
+        <li><strong>Skicka in intyg:</strong> Du behöver arbetsgivarintyg från din tidigare arbetsgivare. Be om detta så snart som möjligt.</li>
+        <li><strong>Tidrapportera:</strong> Skicka in dina kassakort löpande varannan vecka.</li>
+      </ol>
     `
   },
   {
     slug: "vilken-akassa-passar-mig",
-    title: "Vilken a-kassa passar olika yrken?",
-    summary: "Hitta rätt a-kassa baserat på din bransch. Vi listar de vanligaste a-kassorna för olika yrkesgrupper.",
-    image: "/artiklar/valja-ratt-akassa.jpg",
+    title: "Guide: Hitta rätt a-kassa för ditt yrke",
+    summary: "Det finns över 20 olika a-kassor i Sverige. Vilken ska du välja? Vi hjälper dig att navigera i djungeln och hitta rätt kassa för din yrkeskategori.",
+    image: "/artiklar/valja-ratt-akassa.png",
     publishedAt: "2023-11-20",
     content: `
-      <h2>Hitta rätt i djungeln</h2>
-      <p>Det finns över 20 olika a-kassor i Sverige. Vissa är specialiserade på akademiker, andra på byggnadsarbetare, och vissa på egenföretagare.</p>
-      
-      <h3>Akademikernas a-kassa</h3>
-      <p>Passar dig som har en högskoleutbildning eller studerar. Det är Sveriges största a-kassa.</p>
-      
-      <h3>Unionens a-kassa</h3>
-      <p>För dig som är tjänsteman i privat sektor. En av de största och mest populära a-kassorna.</p>
-      
-      <h3>Småföretagarnas a-kassa</h3>
-      <p>Specialiserad för dig som driver eget företag eller är företagsledare.</p>
+      <p class="lead">Att välja rätt a-kassa handlar inte bara om att betala en avgift. Det handlar om att välja en organisation som förstår din bransch och kan ge dig rätt stöd. Här är guiden som hjälper dig att välja rätt.</p>
+
+      <h2>Varför ska jag välja en specifik a-kassa?</h2>
+      <p>Många tror att "a-kassa som a-kassa" gäller, men det finns fördelar med att välja rätt. En a-kassa som är specialiserad på din bransch har handläggare som förstår dina anställningsvillkor, vilket kan leda till smidigare hantering av ditt ärende om du har oregelbundna arbetstider, provision eller andra specifika villkor.</p>
+
+      <h2>Vanliga a-kassor per yrkesområde</h2>
+
+      <h3>För Akademiker</h3>
+      <p><strong>Akademikernas a-kassa (AEA)</strong> är det självklara valet om du har 180 högskolepoäng eller mer, eller studerar. Det är Sveriges största a-kassa med över 750 000 medlemmar. De är kända för låg avgift och effektiv handläggning.</p>
+
+      <h3>För Tjänstemän</h3>
+      <p>Om du jobbar på kontor i privat sektor är <strong>Unionens a-kassa</strong> ofta rätt val. De organiserar allt från administratörer och säljare till IT-konsulter och chefer. Även <strong>Ledarnas a-kassa</strong> är ett alternativ om du har en chefsposition.</p>
+
+      <h3>För Vård och Omsorg</h3>
+      <p><strong>Kommunals a-kassa</strong> är störst inom kommunala yrken som undersköterska, barnskötare och personlig assistent. Arbetar du däremot som sjuksköterska eller läkare hör du oftast till Akademikernas a-kassa.</p>
+
+      <h3>För Bygg och Hantverk</h3>
+      <p>Här finns flera specialiserade kassor som <strong>Byggnads a-kassa</strong>, <strong>Elektrikernas a-kassa</strong> och <strong>Målarnas a-kassa</strong>. De har stenkoll på ackord, säsongsanställningar och branschspecifika avtal.</p>
+
+      <h3>För Egenföretagare</h3>
+      <p>Som företagare har du specifika regler kring "vilande företag" för att få ersättning. <strong>Småföretagarnas a-kassa (Småa)</strong> är experter på detta och kan guida dig rätt så att du inte riskerar din ersättning.</p>
+
+      <h2>Kan jag vara med i vilken a-kassa som helst?</h2>
+      <p>Nej, de flesta a-kassor har stadgar som reglerar vem som får bli medlem. Om du byter bransch helt (t.ex. från lärare till snickare) måste du oftast byta a-kassa. Det är dock enkelt gjort och din intjänade medlemstid följer med dig så länge det inte blir något glapp.</p>
+
+      <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600 my-6">
+        <h3 class="font-bold text-lg mb-2">Tips!</h3>
+        <p>Är du osäker? De flesta a-kassor har en "Bli medlem"-sida där du kan se exakt vilka yrken de organiserar. Eller använd vår sökfunktion här på sajten för att hitta rätt direkt.</p>
+      </div>
     `
   },
   {
     slug: "ersattning-karens-villkor",
-    title: "Så här funkar ersättning, karens och medlemsvillkor",
-    summary: "Vi reder ut begreppen kring dagpenning, karensdagar och vad som krävs för att få full ersättning.",
-    image: "/artiklar/ersattning-karens-villkor.jpg",
+    title: "Hur mycket får jag i ersättning? (Belopp, Tak & Karens)",
+    summary: "Vi dyker ner i detaljerna kring dagpenning, inkomsttak och hur 80%-regeln faktiskt fungerar i praktiken år 2025.",
+    image: "/artiklar/ersattning-karens.png",
     publishedAt: "2023-11-25",
     content: `
-      <h2>Hur mycket får jag?</h2>
-      <p>Ersättningen baseras på din tidigare inkomst. Taket för ersättningen höjdes under pandemin och ligger kvar på en högre nivå. Som mest kan du få ca 80% av din lön upp till ett visst tak.</p>
+      <p class="lead">När lönen försvinner är a-kassan din livlina. Men hur mycket pengar handlar det egentligen om? Och vad innebär de olika begreppen som "tak" och "karens"? Vi reder ut begreppen.</p>
+
+      <h2>Så beräknas din ersättning</h2>
+      <p>Ersättningen från a-kassan baseras på din genomsnittliga inkomst de senaste 12 månaderna innan du blev arbetslös. Grundregeln är enkel:</p>
+      <ul>
+        <li><strong>Dag 1-100:</strong> 80% av din tidigare lön (upp till taket).</li>
+        <li><strong>Dag 101-200:</strong> 80% av din tidigare lön (upp till taket).</li>
+        <li><strong>Dag 201-300:</strong> 70% av din tidigare lön (upp till taket).</li>
+      </ul>
+
+      <h2>Vad ligger taket på 2025?</h2>
+      <p>Det finns ett maximalt belopp du kan få, oavsett hur mycket du tjänade innan. Detta kallas för "taket" i försäkringen.</p>
+      <ul>
+        <li>Högsta dagpenning är ca <strong>1 200 kr/dag</strong> före skatt de första 100 dagarna.</li>
+        <li>Detta motsvarar en månadslön på upp till ca <strong>33 000 kr</strong>.</li>
+      </ul>
+      <p>Tjänar du mer än 33 000 kr i månaden? Då får du inte ut 80% av hela din lön från enbart a-kassan. För att skydda lönen ovanför taket behöver du en <strong>inkomstförsäkring</strong>, vilket ofta ingår i fackligt medlemskap eller kan tecknas separat.</p>
+
+      <h2>Karensdagar – "Självrisken"</h2>
+      <p>När du blir arbetslös får du inte ersättning från första dagen. De inledande dagarna kallas karensdagar (oftast 2 dagar). Dessa dagar fungerar som en självrisk där du inte får någon utbetalning, men de räknas inte heller av från dina 300 ersättningsdagar.</p>
+
+      <h2>Viktiga villkor för att få full ersättning</h2>
+      <p>För att få den inkomstbaserade ersättningen måste du uppfylla två huvudvillkor:</p>
       
-      <h2>Karensdagar</h2>
-      <p>När du blir arbetslös har du oftast några karensdagar i början då du inte får någon ersättning. Detta fungerar som en självrisk.</p>
-      
-      <h2>Medlemsvillkoret</h2>
-      <p>För att få inkomstbaserad ersättning måste du ha varit medlem i a-kassan i minst 12 sammanhängande månader.</p>
+      <h3>1. Medlemsvillkoret</h3>
+      <p>Du ska ha varit medlem i a-kassan i minst <strong>12 sammanhängande månader</strong> innan arbetslösheten. Har du varit medlem kortare tid kan du bara få grundersättning.</p>
+
+      <h3>2. Arbetsvillkoret</h3>
+      <p>Du måste ha arbetat i en viss omfattning före arbetslösheten. Vanligtvis krävs att du jobbat minst 80 timmar/månad i minst 6 månader under det senaste året, eller totalt 480 timmar under 6 sammanhängande månader.</p>
     `
   },
   {
     slug: "vanliga-misstag",
-    title: "Vanliga misstag kring a-kassa och anställningsformer",
-    summary: "Missar du att byta a-kassa när du byter bransch? Eller glömmer du att anmäla dig till Arbetsförmedlingen? Här är fällorna att undvika.",
-    image: "/artiklar/vanliga-misstag.jpg",
+    title: "5 vanliga misstag som kan kosta dig din ersättning",
+    summary: "Se till att du inte går miste om pengar i onödan. Här listar vi de vanligaste fallgroparna och hur du enkelt undviker dem.",
+    image: "/artiklar/vanliga-misstag.png",
     publishedAt: "2023-11-30",
     content: `
-      <h2>1. Glömma att anmäla sig till Arbetsförmedlingen</h2>
-      <p>Detta är det absolut vanligaste misstaget. Du måste skriva in dig på Arbetsförmedlingen din <strong>första</strong> arbetslösa dag för att få ersättning.</p>
-      
-      <h2>2. Glapp i medlemskapet</h2>
-      <p>Om du byter a-kassa, se till att det inte blir något glapp. Begär utträde och inträde i direkt anslutning till varandra.</p>
-      
-      <h2>3. Inte skicka in tidrapporter i tid</h2>
-      <p>För att få ut dina pengar måste du kassakort (tidrapporter) skickas in löpande. Slarv med detta leder till försenad utbetalning.</p>
+      <p class="lead">Att hantera myndigheter och försäkringskassor kan vara krångligt. Tyvärr leder små administrativa missar ofta till att man förlorar rätten till ersättning eller får den försent. Här är checklistan för att göra rätt.</p>
+
+      <h2>1. Du väntar med att anmäla dig till Arbetsförmedlingen</h2>
+      <p class="text-red-700 font-medium">Konsekvens: Ingen ersättning för dagarna du missat.</p>
+      <p>Detta är det absolut vanligaste och dyraste misstaget. Du måste skriva in dig på Arbetsförmedlingen din <strong>första arbetslösa dag</strong>. Om din sista anställningsdag var en fredag, skriv in dig på måndagen. Väntar du till onsdagen så får du noll kronor för måndag och tisdag.</p>
+
+      <h2>2. "Glapp" vid byte av a-kassa</h2>
+      <p class="text-red-700 font-medium">Konsekvens: Du måste börja om på nytt med 12 månaders kvalificeringstid.</p>
+      <p>Om du byter a-kassa är det kritiskt att det inte blir en enda dags uppehåll mellan medlemskapen. Begär utträde ur den gamla kassan den sista i månaden (t.ex. 31 januari) och inträde i den nya den första i nästa månad (t.ex. 1 februari). De flesta a-kassor har fullmakt för att hjälpa dig med bytet – använd den!</p>
+
+      <h2>3. Slarv med tidrapporter (Kassakort)</h2>
+      <p class="text-red-700 font-medium">Konsekvens: Försenad utbetalning.</p>
+      <p>Du måste löpande rapportera vad du gjort de senaste två veckorna. Slarvar du med att skicka in dessa "kassakort" kan inte a-kassan betala ut pengarna, vilket leder till onödig väntan.</p>
+
+      <h2>4. Missad aktivitetsrapport</h2>
+      <p class="text-red-700 font-medium">Konsekvens: Varning eller avstängning från ersättning.</p>
+      <p>Varje månad (mellan den 1:a och 14:e) måste du rapportera till Arbetsförmedlingen vilka jobb du sökt och andra aktiviteter du genomfört. Glömmer du detta får du en varning, och vid upprepade tillfällen dras ersättningen in.</p>
+
+      <h2>5. Du säger upp dig själv utan giltigt skäl</h2>
+      <p class="text-red-700 font-medium">Konsekvens: 45 dagars avstängning (karens).</p>
+      <p>Om du säger upp dig själv blir du som regel avstängd från ersättning i 45 ersättningsdagar (ca 10 veckor utan pengar). Det finns undantag (giltiga skäl), t.ex. om du blir sjuk av jobbet eller om arbetsgivaren inte betalar lön, men detta måste bevisas noga.</p>
     `
   },
   {
     slug: "ekonomi-kris-akassa",
-    title: "När ekonomin rasar efter jobbförlust – därför är a-kassan så viktig",
-    summary: "Att förlora jobbet kan vara en ekonomisk chock. A-kassan är ditt första skyddsnät, men ibland räcker det inte till. Så här hanterar du en ekonomisk kris.",
-    image: "/artiklar/ekonomi-jobbforlust.jpg",
+    title: "När ekonomin rasar – så överlever du jobbförlusten",
+    summary: "Konkreta tips och strategier för att hantera privatekonomin när inkomsten plötsligt försvinner. Budgettips, prioritering av skulder och vägar till hjälp.",
+    image: "/artiklar/ekonomi-kris.png",
     publishedAt: "2023-12-05",
     content: `
-      <h2>En ekonomisk chock</h2>
-      <p>Att bli av med jobbet innebär ofta att inkomsten halveras eller försvinner helt under en period. Utan a-kassa står många helt utan skyddsnät och tvingas leva på besparingar eller försörjningsstöd.</p>
+      <p class="lead">Att förlora jobbet är en av livets stora stressfaktorer. Utöver oron för karriären kommer ofta en omedelbar ekonomisk press. Här är en handlingsplan för att ta kontroll över situationen.</p>
+
+      <h2>1. Gör en krisbudget direkt</h2>
+      <p>Vänta inte och se "hur det går". Sätt dig ner omedelbart och lista:</p>
+      <ul>
+        <li><strong>Inkomster:</strong> Vad får du ut från a-kassa? Inkomstförsäkring? Avgångsvederlag?</li>
+        <li><strong>Fasta utgifter:</strong> Hyra, el, försäkringar, lån.</li>
+        <li><strong>Rörliga utgifter:</strong> Mat, nöjen, streamingtjänster.</li>
+      </ul>
+      <p>Stryk allt som inte är nödvändigt. Pausa streamingtjänster, säg upp gymkortet om du kan träna ute, och laga matlådor.</p>
+
+      <h2>2. Prioritera dina räkningar</h2>
+      <p>Om pengarna inte räcker till allt, måste du prioritera rätt:</p>
+      <ol>
+        <li><strong>Boende & El:</strong> Detta måste betalas för att du inte ska bli vräkt.</li>
+        <li><strong>A-kasseavgiften:</strong> Missar du denna kan du åka ur a-kassan och förlora din ersättning. Betala alltid denna!</li>
+        <li><strong>Mat & Medicin:</strong> Grundläggande behov.</li>
+        <li><strong>Lån & Krediter:</strong> Kontakta banken om du har svårt att betala. Ofta kan man få amorteringsfritt en period.</li>
+      </ol>
+
+      <h2>3. Hantera skulder proaktivt</h2>
+      <p>Det värsta du kan göra är att stoppa huvudet i sanden (den så kallade "strutsmetoden"). Skulder försvinner inte, de växer med ränta och avgifter.</p>
       
-      <h2>A-kassan som krockkudde</h2>
-      <p>A-kassan är till för att ge dig tid att ställa om. Den täcker en del av inkomstbortfallet och ger dig möjlighet att söka nya jobb utan att behöva sälja hus och hem direkt.</p>
-      
-      <h2>Om krisen ändå är framme</h2>
-      <p>Ibland räcker inte a-kassan till, eller så har man dragit på sig kostnader som är svåra att hantera med en lägre inkomst. Obetalda räkningar kan snabbt växa till stora skulder hos Kronofogden.</p>
-      
-      <div class="bg-red-50 border-l-4 border-red-500 p-4 my-6">
-        <h3 class="text-red-800 font-bold text-lg mb-2">Har du hamnat i ekonomisk knipa?</h3>
-        <p class="text-red-700 mb-4">
-          Om du har svårt att betala dina skulder eller känner att ekonomin håller på att krascha, vänta inte med att söka hjälp. Ju tidigare du agerar, desto större chans har du att vända situationen.
+      <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8 rounded-r-lg shadow-sm">
+        <h3 class="text-red-900 font-bold text-xl mb-3">Varningssignal!</h3>
+        <p class="text-red-800 mb-4">
+          Börjar du betala gamla lån med nya snabblån? Eller har du inkassokrav som staplas på hög? Då måste du agera nu innan det går till Kronofogden.
+        </p>
+        <p class="text-red-800 mb-6">
+          Det finns professionell hjälp att få för att sanera sin ekonomi och få en nystart. Det är inget att skämmas över – det är ett ansvarsfullt sätt att ta tag i sitt liv.
         </p>
         <a 
           href="https://skuldregistret.se/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-block bg-red-600 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition-colors"
+          class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors shadow-sm"
         >
-          Få hjälp hos Skuldregistret.se &rarr;
+          Få kostnadsfri hjälp hos Skuldregistret.se &rarr;
         </a>
       </div>
-      
-      <p>Kom ihåg att du inte är ensam. Många hamnar i ekonomiska svårigheter någon gång i livet. Det viktiga är att ta tag i problemen och inte stoppa huvudet i sanden.</p>
+
+      <h2>4. Sök bostadsbidrag</h2>
+      <p>Många vet inte om att de kan ha rätt till bostadsbidrag om inkomsten sjunker drastiskt. Gå in på Försäkringskassans hemsida och gör en provberäkning. Det kan handla om tusenlappar i månaden som gör stor skillnad.</p>
+
+      <h2>5. Kom ihåg: Detta är tillfälligt</h2>
+      <p>Arbetslöshet är en period i livet, inte ditt liv. Genom att ta kontroll över ekonomin minskar du stressen och kan lägga energin på det som faktiskt tar dig därifrån: att nätverka och söka nya spännande jobb.</p>
     `
   }
 ];
