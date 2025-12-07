@@ -10,8 +10,8 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Brand Column */}
                     <div>
-                        <Link href="/" className="flex items-center mb-8 inline-block">
-                            <div className="relative h-28 w-96">
+                        <Link href="/" className="flex items-center mb-10 inline-block">
+                            <div className="relative h-56 w-[48rem]">
                                 <Image
                                     src="/logo-valja-akassa-white.png"
                                     alt="Välja A-kassa Logo"
