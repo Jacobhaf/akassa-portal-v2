@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils"; // Assuming utils exists, otherwise I'll mock className joining
@@ -29,6 +30,11 @@ function NavLink({ href, children, active }: { href: string; children: React.Rea
 export default function Header() {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -91,7 +97,7 @@ export default function Header() {
             </div>
 
             {/* Premium Mobile Menu Overlay */}
-            {isMenuOpen && (
+            {isMenuOpen && mounted && createPortal(
                 <>
                     {/* Backdrop */}
                     <div
@@ -182,7 +188,8 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                </>
+                </>,
+                document.body
             )}
         </header >
     );
