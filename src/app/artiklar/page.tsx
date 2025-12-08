@@ -4,7 +4,7 @@ import { articles } from "@/data/articles";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Artiklar om a-kassa | Välj a-kassa",
+    title: "Artiklar om a-kassa | Välja A-kassa",
     description: "Läs våra guider och artiklar om a-kassa, ersättning och trygghet på arbetsmarknaden.",
 };
 

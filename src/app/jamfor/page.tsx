@@ -1,11 +1,12 @@
-
 import AkassaComparison from "@/components/comparison/AkassaComparison";
 
 export const metadata = {
-    title: "Jämför A-kassor 2024 – Hitta bästa pris och villkor | A-kassa Portal",
-    description: "Jämför Sveriges alla a-kassor. Se pris, medlemsantal och hitta den kassa som passar ditt yrke bäst. Enkel och oberoende jämförelse.",
-    alternates: {
-        canonical: '/jamfor',
+    title: "Jämför A-kassor – Hitta bästa a-kassan 2025 | Välja A-kassa",
+    description: "Jämför villkor, priser och omdömen för alla Sveriges a-kassor. Hitta den bästa a-kassan för dig.",
+    openGraph: {
+        title: "Jämför A-kassor | Välja A-kassa",
+        description: "Jämför villkor, priser och omdömen för alla Sveriges a-kassor.",
+        url: "https://www.valjaakassa.se/jamfor",
     },
 };
 
@@ -16,7 +17,7 @@ export default function ComparePage() {
             <div className="bg-[#0B1B3F] py-16 sm:py-24">
                 <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
                     <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-                        Jämför alla Sveriges a-kassor
+                        Jämför a-kassor - Välja A-kassa
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-blue-100">
                         Hitta rätt a-kassa för ditt yrke och din bransch. Vi hjälper dig att jämföra priser, villkor och medlemsförmåner så att du kan göra ett tryggt val.

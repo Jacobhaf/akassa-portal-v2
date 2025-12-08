@@ -3,7 +3,7 @@ import { articles } from "@/data/articles";
 import { yrken, akassor } from "@/data/database";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app";
+    const baseUrl = "https://www.valjaakassa.se";
 
     // Static routes
     const routes = [

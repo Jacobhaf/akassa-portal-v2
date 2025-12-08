@@ -8,12 +8,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Jämför alla Sveriges A-kassor | A-kassa Portal",
+    title: "Jämför alla Sveriges A-kassor | Välja A-kassa",
     description: "Jämför Sveriges alla a-kassor och hitta rätt kassa för ditt yrke. Snabb jämförelse, tydliga rekommendationer och uppdaterad information.",
     openGraph: {
-        title: "Jämför alla Sveriges A-kassor | A-kassa Portal",
+        title: "Jämför alla Sveriges A-kassor | Välja A-kassa",
         description: "Jämför Sveriges alla a-kassor och hitta rätt kassa för ditt yrke. Snabb jämförelse, tydliga rekommendationer och uppdaterad information.",
-        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app",
+        url: "https://www.valjaakassa.se",
         images: [
             {
                 url: "/hero-poster.jpg",

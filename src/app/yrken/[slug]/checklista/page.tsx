@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!checklist) return {};
 
     return {
-        title: `Checklista för arbetslös ${checklist.professionName} – så får du rätt ersättning`,
+        title: `Checklista för arbetslös ${checklist.professionName} – så får du rätt ersättning | Välja A-kassa`,
         description: `Är du arbetslös ${checklist.professionName}? Följ vår checklista för att säkra din a-kassa. Steg-för-steg guide för ${checklist.professionName}.`,
     };
 }

@@ -22,15 +22,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
+        title: `${yrke.name} a-kassa – Bästa val 2025 | Välja A-kassa`,
         description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
         alternates: {
             canonical: `/yrken/${yrke.slug}`,
         },
         openGraph: {
-            title: `${yrke.name} a-kassa – Bästa val 2025 | A-kassa Portal`,
+            title: `${yrke.name} a-kassa – Bästa val 2025 | Välja A-kassa`,
             description: `Jobbar du som ${yrke.name}? Här ser du vilken a-kassa som rekommenderas samt lön för ${yrke.name} 2025.`,
-            url: `https://valjakassa.se/yrken/${yrke.slug}`,
+            url: `https://www.valjaakassa.se/yrken/${yrke.slug}`,
             images: [
                 {
                     url: "/hero-poster.jpg",

@@ -112,20 +112,20 @@ export default function Footer() {
                             Har du frågor eller funderingar? Vi finns här för att hjälpa dig göra rätt val.
                         </p>
                         <a
-                            href="mailto:info@valjakassa.se"
+                            href="mailto:info@valjaakassa.se"
                             className="inline-flex items-center justify-center w-full px-4 py-3 border border-white/20 rounded-lg text-sm font-medium text-white hover:bg-white/10 transition-colors group"
                         >
-                            <span className="mr-2">✉️</span> info@valjakassa.se
+                            <span className="mr-2">✉️</span> info@valjaakassa.se
                         </a>
                         <p className="mt-6 text-xs text-gray-500">
-                            Välj a-kassa är en oberoende jämförelsetjänst.
+                            Välja a-kassa är en oberoende jämförelsetjänst.
                         </p>
                     </div>
                 </div>
 
                 <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-gray-500 text-center md:text-left">
-                        &copy; {currentYear} Välj a-kassa. Alla rättigheter förbehållna.
+                        &copy; {currentYear} Välja a-kassa. Alla rättigheter förbehållna.
                     </p>
                     <div className="flex space-x-6">
                         <Link href="/sitemap" className="text-xs text-gray-500 hover:text-white transition-colors">

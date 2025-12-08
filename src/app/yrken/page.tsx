@@ -10,13 +10,13 @@ export const metadata = {
     openGraph: {
         title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | A-kassa Portal",
         description: "Lista över alla yrken vi matchar mot a-kassa. Hitta ditt yrke och se vilken a-kassa som rekommenderas för just din bransch.",
-        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/yrken",
+        url: "https://www.valjaakassa.se/yrken",
         images: [
             {
                 url: "/hero-poster.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Alla yrken - A-kassa Portal",
+                alt: "Hitta a-kassa för yrke - Välja A-kassa",
             },
         ],
     },

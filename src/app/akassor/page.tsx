@@ -2,18 +2,18 @@ import AkassorGrid from "@/components/AkassorGrid";
 import Image from "next/image";
 
 export const metadata = {
-    title: "Jämför alla Sveriges A-kassor | A-kassa Portal",
+    title: "Jämför alla Sveriges A-kassor | Välja A-kassa",
     description: "Här hittar du en komplett lista över alla a-kassor i Sverige. Jämför avgifter, villkor och hitta rätt a-kassa för dig.",
     openGraph: {
-        title: "Jämför alla Sveriges A-kassor | A-kassa Portal",
+        title: "Jämför alla Sveriges A-kassor | Välja A-kassa",
         description: "Här hittar du en komplett lista över alla a-kassor i Sverige. Jämför avgifter, villkor och hitta rätt a-kassa för dig.",
-        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/akassor",
+        url: "https://www.valjaakassa.se/akassor",
         images: [
             {
                 url: "/hero-poster.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Alla a-kassor - A-kassa Portal",
+                alt: "Alla a-kassor - Välja A-kassa",
             },
         ],
     },

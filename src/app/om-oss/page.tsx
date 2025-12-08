@@ -1,16 +1,16 @@
 export const metadata = {
-    title: "Om oss – Oberoende guide till a-kassor | A-kassa Portal",
-    description: "Läs mer om A-kassa Portal. Vi är en oberoende tjänst som hjälper dig att hitta rätt a-kassa baserat på ditt yrke och din bransch.",
+    title: "Om oss – Oberoende guide till a-kassor | Välja A-kassa",
+    description: "Läs mer om Välja A-kassa. Vi är en oberoende tjänst som hjälper dig att hitta rätt a-kassa baserat på ditt yrke och din bransch.",
     openGraph: {
-        title: "Om oss – Oberoende guide till a-kassor | A-kassa Portal",
-        description: "Läs mer om A-kassa Portal. Vi är en oberoende tjänst som hjälper dig att hitta rätt a-kassa baserat på ditt yrke och din bransch.",
-        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/om-oss",
+        title: "Om oss – Oberoende guide till a-kassor | Välja A-kassa",
+        description: "Läs mer om Välja A-kassa. Vi är en oberoende tjänst som hjälper dig att hitta rätt a-kassa baserat på ditt yrke och din bransch.",
+        url: "https://www.valjaakassa.se/om-oss",
         images: [
             {
                 url: "/hero-poster.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Om oss - A-kassa Portal",
+                alt: "Om oss - Välja A-kassa",
             },
         ],
     },
@@ -37,7 +37,7 @@ export default function OmOssPage() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                            Om Välj a-kassa
+                            Om Välja a-kassa
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-blue-100">
                             Vi är en oberoende tjänst som hjälper dig att hitta rätt a-kassa baserat på ditt yrke och din bransch.
@@ -50,7 +50,7 @@ export default function OmOssPage() {
 
                 <div className="prose prose-lg text-gray-600">
                     <p>
-                        Välj a-kassa är en oberoende tjänst som hjälper dig att hitta rätt a-kassa utifrån ditt yrke.
+                        Välja a-kassa är en oberoende tjänst som hjälper dig att hitta rätt a-kassa utifrån ditt yrke.
                         Vi vet att det kan vara krångligt att veta vilken a-kassa man ska välja, särskilt om man byter bransch
                         eller är ny på arbetsmarknaden.
                     </p>

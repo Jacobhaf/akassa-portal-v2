@@ -1,16 +1,16 @@
 export const metadata = {
-    title: "Kontakta oss | A-kassa Portal",
-    description: "Har du frågor eller funderingar? Kontakta oss på A-kassa Portal så hjälper vi dig att hitta rätt information.",
+    title: "Kontakta oss | Välja A-kassa",
+    description: "Har du frågor eller funderingar? Kontakta oss på Välja A-kassa så hjälper vi dig att hitta rätt information.",
     openGraph: {
-        title: "Kontakta oss | A-kassa Portal",
-        description: "Har du frågor eller funderingar? Kontakta oss på A-kassa Portal så hjälper vi dig att hitta rätt information.",
-        url: "https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/kontakt",
+        title: "Kontakta oss | Välja A-kassa",
+        description: "Har du frågor eller funderingar? Kontakta oss på Välja A-kassa så hjälper vi dig att hitta rätt information.",
+        url: "https://www.valjaakassa.se/kontakt",
         images: [
             {
                 url: "/hero-poster.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Kontakta oss - A-kassa Portal",
+                alt: "Kontakta oss - Välja A-kassa",
             },
         ],
     },
@@ -56,14 +56,14 @@ export default function KontaktPage() {
 
                         <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Postadress</h3>
                         <p className="not-prose">
-                            Välj a-kassa<br />
+                            Välja a-kassa<br />
                             Vallgatan 25<br />
                             411 16 Göteborg
                         </p>
 
                         <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">E-post</h3>
                         <p>
-                            Du når oss enklast via e-post: <a href="mailto:info@valjakassa.se" className="text-blue-600 hover:underline">info@valjakassa.se</a>
+                            Du når oss enklast via e-post: <a href="mailto:info@valjaakassa.se" className="text-blue-600 hover:underline">info@valjaakassa.se</a>
                         </p>
 
                         <div className="mt-8 rounded-lg bg-blue-50 p-4 text-sm text-blue-800">
