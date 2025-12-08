@@ -4,8 +4,8 @@ import { yrken, akassor } from "@/data/database";
 import { articles } from "@/data/articles";
 
 export const metadata: Metadata = {
-    title: "Sidkarta | Välj a-kassa",
-    description: "Översikt över alla sidor på Välj a-kassa.",
+    title: "Sidkarta | Välja A-kassa",
+    description: "Översikt över alla sidor på Välja A-kassa.",
 };
 
 export default function SitemapPage() {
@@ -17,7 +17,7 @@ export default function SitemapPage() {
                         Sidkarta
                     </h1>
                     <p className="mt-4 text-lg text-gray-600">
-                        En komplett översikt över allt innehåll på Välj a-kassa.
+                        En komplett översikt över allt innehåll på Välja A-kassa.
                     </p>
                 </div>
 

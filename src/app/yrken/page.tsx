@@ -5,10 +5,10 @@ import Search from "@/components/Search";
 import YrkeCard from "@/components/YrkeCard";
 
 export const metadata = {
-    title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | A-kassa Portal",
+    title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | Välja A-kassa",
     description: "Lista över alla yrken vi matchar mot a-kassa. Hitta ditt yrke och se vilken a-kassa som rekommenderas för just din bransch.",
     openGraph: {
-        title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | A-kassa Portal",
+        title: "Alla yrken – Hitta rätt a-kassa för ditt jobb | Välja A-kassa",
         description: "Lista över alla yrken vi matchar mot a-kassa. Hitta ditt yrke och se vilken a-kassa som rekommenderas för just din bransch.",
         url: "https://www.valjaakassa.se/yrken",
         images: [

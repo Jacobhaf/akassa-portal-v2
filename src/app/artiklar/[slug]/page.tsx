@@ -14,14 +14,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const article = articles.find((a) => a.slug === params.slug);
     if (!article) return { title: "Artikel hittades inte" };
     return {
-        title: `${article.title} | A-kassa Portal`,
+        title: `${article.title} | Välja A-kassa`,
         description: article.summary,
         openGraph: {
             title: `${article.title} | Välja A-kassa`,
             description: article.summary,
             type: "article",
             publishedTime: article.publishedAt,
-            url: `https://akassa-portal-v2-wvsoh22w7-jacobhafs-projects.vercel.app/artiklar/${article.slug}`,
+            url: `https://www.valjaakassa.se/artiklar/${article.slug}`,
             images: [
                 {
                     url: article.image,
