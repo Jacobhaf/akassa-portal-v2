@@ -37,6 +37,9 @@ export default function JamforPage() {
                             height={500}
                             className="w-full object-cover h-auto m-0"
                         />
+                        <p className="text-center text-sm text-gray-500 mt-2 italic">
+                            Jämför a-kassa - Hitta den bästa A-kassan för dig
+                        </p>
                     </div>
 
                     <section className="space-y-12">
