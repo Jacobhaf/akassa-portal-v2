@@ -14,7 +14,7 @@ export default function JamforPage() {
             {/* Header Section */}
             <div className="bg-[#0B1B3F] py-16 text-center text-white">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                    Jämför a-kassor – hitta rätt a-kassa för ditt yrke
+                    Jämför a-kassa – hitta den bästa a-kassan för ditt yrke
                 </h1>
                 <p className="mt-4 text-lg text-blue-100">
                     Jämför priser, villkor och hitta den tryggaste lösningen för dig.
