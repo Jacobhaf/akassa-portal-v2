@@ -14,7 +14,7 @@ function NavLink({ href, children, active }: { href: string; children: React.Rea
         <Link
             href={href}
             className={cn(
-                "relative text-sm font-medium transition-colors hover:text-white",
+                "relative text-base font-medium transition-colors hover:text-white",
                 active ? "text-white" : "text-blue-200/80"
             )}
         >
@@ -47,7 +47,7 @@ export default function Header() {
             <div className="mx-auto flex h-20 md:h-32 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative z-50">
                 <div className="flex items-center">
                     <Link href="/" className="flex items-center group" onClick={() => setIsMenuOpen(false)}>
-                        <div className="relative h-16 w-64 md:h-24 md:w-96 transition-transform group-hover:scale-105">
+                        <div className="relative h-20 w-80 md:h-28 md:w-[28rem] transition-transform group-hover:scale-105">
                             <Image
                                 src="/logo-valja-akassa-white.png"
                                 alt="Välja A-kassa Logo"
@@ -63,17 +63,15 @@ export default function Header() {
                 <nav className="hidden md:flex items-center gap-10">
                     <NavLink href="/" active={isActive("/")}>Hem</NavLink>
                     <NavLink href="/#jamfor" active={isActive("/#jamfor")}>A-kassor</NavLink>
-                    <NavLink href="/jamfor" active={isActive("/jamfor")}>Jämför a-kassor</NavLink>
                     <NavLink href="/yrken" active={isActive("/yrken")}>Yrken</NavLink>
                     <NavLink href="/inkomstforsakring" active={isActive("/inkomstforsakring")}>Inkomstförsäkring</NavLink>
-                    <NavLink href="/artiklar" active={isActive("/artiklar")}>Artiklar</NavLink>
                 </nav>
 
                 {/* Desktop CTA */}
                 <div className="hidden md:flex items-center ml-8">
                     <Link
                         href="/jamfor"
-                        className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+                        className="rounded-lg bg-blue-600 px-5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
                     >
                         Jämför a-kassor
                     </Link>
