@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
+
+// 👉 Vercel Analytics import
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +41,7 @@ export default function RootLayout({
     return (
         <html lang="sv" className="scroll-smooth">
             <body className={inter.className}>
+                <CookieConsent />
                 <div className="flex min-h-screen flex-col">
                     <Header />
                     <main className="flex-grow bg-gray-50 text-gray-900">
@@ -44,6 +49,9 @@ export default function RootLayout({
                     </main>
                     <Footer />
                 </div>
+
+                {/* 👉 Vercel Analytics – placed just before </body> */}
+                <Analytics />
             </body>
         </html>
     );
